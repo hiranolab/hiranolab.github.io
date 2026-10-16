@@ -70,8 +70,10 @@ img { max-width: 100%; height: auto; }
 .sitenav a[aria-current="page"] { border-bottom-color: var(--artery); }
 .lang-switch { font-size: .85rem !important; border: 1px solid var(--line) !important; border-radius: 999px; padding: .2rem .8rem !important; }
 .menu-toggle { display: none; }
+.sitenav a, .brand-name { white-space: nowrap; }
+html[lang="en"] .sitenav ul { gap: 1rem; }
 
-@media (max-width: 860px) {
+@media (max-width: 980px) {
   .menu-toggle {
     display: block; font: inherit; font-size: .9rem; color: var(--ink); background: none;
     border: 1px solid var(--line); border-radius: 999px; padding: .3rem .9rem; cursor: pointer;
@@ -83,6 +85,19 @@ img { max-width: 100%; height: auto; }
   .sitenav ul a { display: block; padding: .7rem 0; border-bottom: 1px solid var(--line); }
   .sitenav a[aria-current="page"] { border-bottom-color: var(--line); color: var(--artery); }
   .lang-switch { align-self: flex-start; margin-top: .9rem; }
+}
+@media (max-width: 1180px) {
+  html[lang="en"] .menu-toggle {
+    display: block; font: inherit; font-size: .9rem; color: var(--ink); background: none;
+    border: 1px solid var(--line); border-radius: 999px; padding: .3rem .9rem; cursor: pointer;
+  }
+  html[lang="en"] .sitenav { display: none; position: absolute; left: 0; right: 0; top: 100%; background: var(--paper);
+    border-bottom: 1px solid var(--line); flex-direction: column; align-items: stretch; gap: 0; padding: .5rem var(--gutter) 1rem; }
+  html[lang="en"] .sitenav.open { display: flex; }
+  html[lang="en"] .sitenav ul { flex-direction: column; gap: 0; }
+  html[lang="en"] .sitenav ul a { display: block; padding: .7rem 0; border-bottom: 1px solid var(--line); }
+  html[lang="en"] .sitenav a[aria-current="page"] { border-bottom-color: var(--line); color: var(--artery); }
+  html[lang="en"] .lang-switch { align-self: flex-start; margin-top: .9rem; }
 }
 
 /* ── Hero: the pulse wave ─────────────────── */
@@ -256,11 +271,17 @@ html[lang="en"] .news-list li { grid-template-columns: 8rem 1fr; }
 .lang-switch { border-color: var(--night-line) !important; }
 .lang-switch:hover { border-color: var(--abp) !important; }
 :focus-visible { outline-color: var(--abp); }
-@media (max-width: 860px) {
+@media (max-width: 980px) {
   .menu-toggle { color: var(--on-night); border-color: var(--night-line); }
   .sitenav { background: var(--night); border-bottom-color: var(--night-line); }
   .sitenav ul a { border-bottom-color: var(--night-line); }
   .sitenav a[aria-current="page"] { border-bottom-color: var(--night-line); color: var(--abp); }
+}
+@media (max-width: 1180px) {
+  html[lang="en"] .menu-toggle { color: var(--on-night); border-color: var(--night-line); }
+  html[lang="en"] .sitenav { background: var(--night); border-bottom-color: var(--night-line); }
+  html[lang="en"] .sitenav ul a { border-bottom-color: var(--night-line); }
+  html[lang="en"] .sitenav a[aria-current="page"] { border-bottom-color: var(--night-line); color: var(--abp); }
 }
 
 /* Hero */
