@@ -65,7 +65,6 @@
 ## 検索エンジンへの登録（公開後・任意）
 
 `sitemap.xml` は自動で作られます。公開後に Google Search Console に公開URLを登録し、`sitemap.xml` を送信すると検索結果に早く反映されます。
-（`robots.txt` は独自ドメインで公開したときに有効になります。`github.io/hirano-lab/` のままでは参照されませんが、問題はありません。）
 
 ## 写真や図を載せる
 
@@ -77,7 +76,7 @@
 
 ### ステップ1：非公開で準備・確認する
 
-1. GitHub アカウントを作成し、新しいリポジトリ（例：`hirano-lab`）を **Private** で作成します。
+1. GitHub で研究室用の組織アカウント（Organization、例：`hiranolab`）を作成し、その中に「組織名.github.io」という名前のリポジトリ（例：`hiranolab.github.io`）を **Private** で作成します。
 2. このフォルダの中身をすべてアップロードします。
 3. この段階ではサイトは公開されません。push（保存）のたびに自動でサイトが生成され、確認用の zip が作られます。
 
@@ -97,7 +96,7 @@ GitHub Pages は、無料プランでは **Public リポジトリでのみ** 使
 
 1. Settings → Pages → Build and deployment の Source を **GitHub Actions** にします。
 2. Settings → Secrets and variables → Actions → Variables で、`PUBLISH_SITE` = `true` を追加します。
-3. 「Actions」→「Build and deploy」→「Run workflow」を押すと公開されます（`https://<アカウント名>.github.io/hirano-lab/`）。
+3. 「Actions」→「Build and deploy」→「Run workflow」を押すと公開されます（`https://<組織名>.github.io/`、このサイトは https://hiranolab.github.io/ ）。
 4. 公開URLが決まったら `data/site.yml` の `url:` を書き換えます。
 5. （任意）独自ドメインを使う場合は Settings → Pages → Custom domain に設定します。
 
