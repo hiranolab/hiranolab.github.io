@@ -64,7 +64,7 @@
 
 ## 検索エンジンへの登録（公開後・任意）
 
-`sitemap.xml` は自動で作られます。公開後に Google Search Console に公開URLを登録し、`sitemap.xml` を送信すると検索結果に早く反映されます。
+`sitemap.xml` は自動で作られます。Search Console の所有権確認ファイル（`google….html`）は `root/` フォルダに置くとサイトの一番上に公開されます（削除しないでください）。公開後に Google Search Console に公開URLを登録し、`sitemap.xml` を送信すると検索結果に早く反映されます。
 
 ## 写真や図を載せる
 

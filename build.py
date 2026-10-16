@@ -214,6 +214,11 @@ def main():
         shutil.rmtree(OUT)
     (OUT / "en").mkdir(parents=True)
     shutil.copytree(ROOT / "static", OUT / "static")
+    # root/ のファイルはサイトの一番上にそのまま置く（Google Search Console の確認用ファイルなど）
+    if (ROOT / "root").is_dir():
+        for f in (ROOT / "root").iterdir():
+            if f.is_file():
+                shutil.copy2(f, OUT / f.name)
 
     nav = [(slug, key) for slug, _, key in PAGES if key]
 
