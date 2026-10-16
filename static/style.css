@@ -246,7 +246,7 @@ html[lang="en"] .news-list li { grid-template-columns: 8rem 1fr; }
 /* Masthead (dark on every page) */
 .masthead { background: rgba(11, 23, 32, .94); border-bottom: 1px solid var(--night-line); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
 .brand { color: var(--on-night); flex-direction: row; align-items: center; gap: .7rem; }
-.brand-mark { width: 1.9rem; height: 1.9rem; flex: none; }
+.brand-mark { width: 2.3rem; height: 2.3rem; flex: none; }
 .brand-text { display: flex; flex-direction: column; }
 .brand-name { font-size: 1.15rem; letter-spacing: .08em; }
 .brand-aff { color: var(--on-night-soft); }

@@ -14,6 +14,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ root }}static/style.css">
 <link rel="icon" href="{{ root }}static/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{ root }}static/img/apple-touch-icon.png">
 {% set page_url = site.url ~ ('' if lang == 'ja' else 'en/') ~ slug ~ '.html' %}
 <meta property="og:type" content="{{ 'website' if slug == 'index' else 'article' }}">
 <meta property="og:site_name" content="{{ p(site.lab) }}">
@@ -32,7 +33,7 @@
 <header class="masthead">
   <div class="wrap masthead-inner">
     <a class="brand" href="{{ navroot }}index.html">
-      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="6" fill="#112330" stroke="#21384a"/><path d="M3 22h5c2 0 2.5-12 5-12s2.5 7 4.5 7 1.5-3 3-3 3 8 8.5 8" fill="none" stroke="#ff4b61" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <svg class="brand-mark" viewBox="0 0 120 120" fill="none" aria-hidden="true"><rect x="2" y="2" width="116" height="116" rx="26" fill="#0b1720" stroke="#21384a" stroke-width="4"/><path d="M80 24V96" stroke="#e7eff4" stroke-width="13" stroke-linecap="round"/><path d="M10 68H44C47 68 49 36 55 36C61 36 63 56 66 58C68 59 69 52 71 52C76 52 78 68 84 68H108" stroke="#0b1720" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 68H44C47 68 49 36 55 36C61 36 63 56 66 58C68 59 69 52 71 52C76 52 78 68 84 68H108" stroke="#ff4b61" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><path d="M40 24V96" stroke="#0b1720" stroke-width="21" stroke-linecap="round"/><path d="M40 24V96" stroke="#e7eff4" stroke-width="13" stroke-linecap="round"/></svg>
       <span class="brand-text">
         <span class="brand-name">{{ p(site.lab) }}</span>
         <span class="brand-aff">{{ '藤田医科大学 医療科学部' if lang == 'ja' else 'Fujita Health University' }}</span>

@@ -58,6 +58,12 @@
 
 `data/join.yml` で `todo: true` が付いた項目は、確認用プレビューでは黄色の「要記入」付きで表示され、公開時（`PUBLISH_SITE` = `true`）には自動的に非表示になります。
 
+## ロゴ
+
+- `static/img/logo.svg`：ロゴの原本（拡大・印刷用）
+- `static/img/logo-512.png`：アイコン用の画像（GitHub・SNS のプロフィール画像など）
+- `static/img/favicon.svg`・`apple-touch-icon.png`：ブラウザのタブやスマートフォンのホーム画面用（小さいサイズ向けに線を太くした版）
+
 ## SNSで共有したときの画像
 
 `static/img/ogp-ja.png`・`ogp-en.png` が共有時に表示されます。研究室名やキャッチコピーを変えたときは `python3 tools/make_ogp.py` で作り直せます（Playwright が必要）。
