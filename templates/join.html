@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}{{ t('join') }}{% endblock %}
+{% block main %}
+<header class="page-head monitor-grid"><div class="wrap"><h1>{{ t('join') }}</h1></div>{% include '_headtrace.html' %}</header>
+
+<section class="section">
+  <div class="wrap prose">
+    <p class="lead">{{ p(join.lead) }}</p>
+  </div>
+</section>
+
+{% for sec in join.sections if not (publish and sec.todo) %}
+<section class="section{% if loop.index is even %} section-tint{% endif %}">
+  <div class="wrap split">
+    <h2 class="section-title">{{ p(sec.title) }}</h2>
+    <div>
+      {% if sec.todo and not publish %}<p class="todo-badge">{{ t('todo') }}</p>{% endif %}
+      {% if sec.todo_note and p(sec.todo_note) and not publish %}<p class="todo-badge">{{ t('todo') }}{{ '：' if lang == 'ja' else ': ' }}{{ p(sec.todo_note) }}</p>{% endif %}
+      {% if sec.get('items') %}
+      <ul class="plain-list join-list">
+        {% for it in sec['items'] %}<li>{{ p(it) }}</li>{% endfor %}
+      </ul>
+      {% endif %}
+      {% if sec.careers %}
+      <div class="careers">
+        {% for sc in sec.careers %}
+        <div class="career-school">
+          <h3 class="sub">{{ p(sc.school) }}</h3>
+          {% for g in sc.groups %}
+          {% if g.kind %}<p class="career-kind">{{ p(g.kind) }}</p>{% endif %}
+          <ul class="career-list">{% for n in g.names %}<li>{{ p(n) }}</li>{% endfor %}</ul>
+          {% endfor %}
+        </div>
+        {% endfor %}
+      </div>
+      {% if sec.note %}<p class="career-note">{{ p(sec.note) }}</p>{% endif %}
+      {% endif %}
+      {% if sec.contact %}
+      <p class="more"><a href="contact.html">{{ t('contact') }}</a></p>
+      {% endif %}
+    </div>
+  </div>
+</section>
+{% endfor %}
+{% endblock %}

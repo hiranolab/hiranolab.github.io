@@ -1,0 +1,101 @@
+# NEWS（日付順に自動で並ぶので，追加する位置はどこでも可）
+# ─────────────────────────────────────────────
+#   - date: 2026-04-01
+#     ja: 日本語の本文
+#     en: English text
+#     links:                  # 参考リンクがあれば（なければ行ごと削除）
+#       - https://...
+# トップページには新しい順に6件、NEWSページには全件が表示されます。
+# ─────────────────────────────────────────────
+
+- date: 2026-10-10
+  ja: "2026年度日本生体医工学会東海支部大会で，吉川乃愛さんが「体表脈波を用いた頭部動脈の血管力学特性計測の試み」を発表しました．"
+  en: "Noa Yoshikawa presented her work on measuring the mechanical properties of head arteries from body-surface pulse waves at the JSMBE Tokai Branch Meeting 2026."
+- date: 2026-06-19
+  ja: "人工心肺開始時のヘモグロビン濃度を機械学習（サポートベクター回帰）で予測する手法の論文が，Journal of ExtraCorporeal Technology に掲載されました．"
+  en: "Our paper on predicting haemoglobin concentration at the initiation of cardiopulmonary bypass using support vector regression was published in the Journal of ExtraCorporeal Technology."
+  links:
+    - https://doi.org/10.1051/ject/2025071
+- date: 2026-05-14
+  ja: "脳卒中患者の脳の病変部位と嚥下・認知機能の関係を機械学習で解析した共同研究の論文が，Scientific Reports に掲載されました．"
+  en: "A collaborative paper using machine learning to analyse the relationship between brain lesion sites and swallowing and cognitive functions in stroke patients was published in Scientific Reports."
+  links:
+    - https://doi.org/10.1038/s41598-026-52516-5
+- date: 2026-04-01
+  ja: 新4年生が配属されました．
+  en: New 4th-year undergraduate students joined the laboratory.
+- date: 2026-03-21
+  ja: "心拍間隔（RR間隔）の分布の非ガウス性をとらえる解析手法に関する共同研究の論文が，Heliyon に掲載されました．"
+  en: "A collaborative paper on a method for capturing the non-Gaussianity of RR interval distributions was published in Heliyon."
+  links:
+    - https://doi.org/10.1016/j.heliyon.2026.e44737
+- date: 2026-03-08
+  ja: 学位授与式が開催され学部生が卒業しました．
+  en: The graduation ceremony was held, and our undergraduate students graduated.
+- date: 2026-01-13
+  ja: "国際会議 SII 2026で，生分解性圧電センサを搭載したイヤホン型ウェアラブルデバイスによる心拍計測に関する共同研究の成果を発表しました．"
+  en: "Collaborative work on heart rate measurement using an earphone-type wearable device with biodegradable piezoelectric sensors was presented at IEEE/SICE SII 2026."
+  links:
+    - https://ieeexplore.ieee.org/document/11404572
+- date: 2025-10-12
+  ja: "人工心肺開始時のヘモグロビン濃度をニューラルネットワーク（多層パーセプトロン）で推定する研究成果を，国際学会 FAPS 2025で発表しました．"
+  en: "Our work on estimating haemoglobin concentration at the initiation of cardiopulmonary bypass with a multilayer perceptron was presented at FAPS 2025."
+- date: 2025-04-01
+  ja: 新大学院生・新4年生が配属されました．
+  en: New graduate and 4th-year undergraduate students joined the laboratory.
+- date: 2025-03-09
+  ja: 学位授与式が開催され学部生が卒業しました．
+  en: The graduation ceremony was held, and our undergraduate students graduated.
+- date: 2025-03-04
+  ja: 本学医療科学部放射線学科からコンケン大学医学部放射線学科への短期交換留学を開始しました．開始にあたり，平野がコンケン大学で記念講演を行いました．
+  en: A short-term exchange programme started between the Department of Radiological Technology, Fujita Health University, and the Department of Radiology, Khon Kaen University. To mark the launch, Dr Hirano gave a commemorative lecture at Khon Kaen University.
+  links:
+    - https://www.intermed.kku.ac.th/professor-harutoyo-hirano-visits-khon-kaen-university-to-strengthen-radiologic-technology-collaboration/
+- date: 2024-09-10
+  ja: 本学とネブラスカ大学メディカルセンターとの大学間MOU協定を締結しました．
+  en: Fujita Health University and the University of Nebraska Medical Center signed an inter-university MOU.
+  links:
+    - https://www.fujita-hu.ac.jp/news/j93sdv000000xn8c.html
+    - https://www.unmc.edu/global/_documents/news/oge-annual-report-2024.pdf
+- date: 2024-04-01
+  ja: 新4年生が配属されました．
+  en: New 4th-year undergraduate students joined the laboratory.
+- date: 2024-03-10
+  ja: 学位授与式が開催され学部生が卒業しました．
+  en: The graduation ceremony was held, and our undergraduate students graduated.
+- date: 2024-02-09
+  ja: "痛みを予期しているときの脳活動と末梢血管の反応の関係をfMRIで示した共同研究の論文が，Scientific Reports に掲載されました．"
+  en: "A collaborative fMRI study showing how brain activity and peripheral vascular responses are linked during pain anticipation was published in Scientific Reports."
+  links:
+    - https://doi.org/10.1038/s41598-024-53921-4
+- date: 2024-01-08
+  ja: "さまざまな感覚刺激による交感神経の活動を，末梢血管の硬さの指標から非侵襲に評価した共同研究の論文が，Frontiers in Physiology に掲載されました．"
+  en: "A collaborative paper on the non-invasive assessment of sympathetic activation across sensory stimuli using a peripheral arterial stiffness index was published in Frontiers in Physiology."
+  links:
+    - https://doi.org/10.3389/fphys.2023.1294239
+- date: 2023-10-18
+  ja: "脳卒中後の自動車運転に必要な運動・認知機能を機械学習で明らかにした共同研究の論文が，Journal of NeuroEngineering and Rehabilitation に掲載されました．"
+  en: "A collaborative paper identifying, with machine learning, the motor and cognitive functions needed for driving after stroke was published in the Journal of NeuroEngineering and Rehabilitation."
+  links:
+    - https://doi.org/10.1186/s12984-023-01263-z
+- date: 2023-06-01
+  ja: 新4年生が追加で配属されました．
+  en: Additional 4th-year undergraduate students joined the laboratory.
+- date: 2023-04-01
+  ja: 新4年生が配属されました．
+  en: New 4th-year undergraduate students joined the laboratory.
+- date: 2022-07-19
+  ja: 平野がEMBC2022で発表を行いました．
+  en: Dr Hirano gave a presentation at IEEE EMBC 2022.
+- date: 2022-05-01
+  ja: 平野が医療科学部臨床教育連携ユニット診断機器工学分野へ異動しました．
+  en: Dr Hirano moved to the Department of Medical Equipment Engineering, Clinical and Educational Collaboration Unit.
+- date: 2022-04-01
+  ja: ホームページを公開しました．
+  en: The laboratory website was launched.
+- date: 2022-04-01
+  ja: 平野研究室を立ち上げました．
+  en: Hirano Laboratory was established.
+- date: 2022-04-01
+  ja: 平野が藤田医科大学医療科学部研究推進ユニット医用情報工学分野の講師に着任しました．
+  en: Dr Hirano was appointed Senior Assistant Professor at the Department of Medical Information Engineering, Research Promotion Unit, School of Medical Sciences, Fujita Health University.

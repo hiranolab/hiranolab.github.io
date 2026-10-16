@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m with context %}
+{% block title %}{{ t('research') }}{% endblock %}
+{% block main %}
+<header class="page-head monitor-grid"><div class="wrap"><h1>{{ t('research') }}</h1></div>{% include '_headtrace.html' %}</header>
+
+<section class="section">
+  <div class="wrap prose">
+    {% for para in p(research.intro) %}<p>{{ para }}</p>{% endfor %}
+  </div>
+</section>
+
+<section class="section section-tint">
+  <div class="wrap split">
+    <h2 class="section-title">{{ t('themes') }}</h2>
+    <ul class="theme-detail">
+    {% for th in research.themes %}
+      <li id="theme-{{ loop.index }}">
+        {{ m.icon(th.icon) }}
+        <div>
+          <h3>{{ p(th.catch) if th.catch else p(th.title) }}</h3>
+          {% if th.catch %}<p class="theme-formal">{{ p(th.title) }}</p>{% endif %}
+          {% if p(th.desc) %}<p class="theme-desc">{{ p(th.desc) }}</p>{% endif %}
+          {% if th.image %}<img src="{{ root }}static/img/{{ th.image }}" alt="{{ p(th.title) }}" loading="lazy">{% endif %}
+          {% if th.papers %}<p class="theme-papers"><span>{{ t('key_papers') }}</span>{% for pp in th.papers %}<a href="{{ pp.url }}" rel="noopener">{{ pp.label }}</a>{% endfor %}</p>{% endif %}
+        </div>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <h2 class="section-title">{{ t('collaborators') }}</h2>
+    <div>
+      <p>{{ t('collab_lead') }}</p>
+      {% for g in research.collaborators %}
+      <h3 class="sub">{{ p(g.group) }}</h3>
+      <ul class="plain-list">
+        {% for it in g['items'] %}<li>{{ p(it) }}</li>{% endfor %}
+      </ul>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

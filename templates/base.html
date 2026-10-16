@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ p(site.lab) }}{% endblock %} | {{ p(site.affiliation) }}</title>
+<meta name="description" content="{{ p(site.lab) }} — {{ p(site.affiliation) }}. {{ p(site.tagline) }}">
+<link rel="canonical" href="{{ site.url }}{{ '' if lang == 'ja' else 'en/' }}{{ slug }}.html">
+<link rel="alternate" hreflang="ja" href="{{ site.url }}{{ slug }}.html">
+<link rel="alternate" hreflang="en" href="{{ site.url }}en/{{ slug }}.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ root }}static/style.css">
+<link rel="icon" href="{{ root }}static/img/favicon.svg" type="image/svg+xml">
+{% set page_url = site.url ~ ('' if lang == 'ja' else 'en/') ~ slug ~ '.html' %}
+<meta property="og:type" content="{{ 'website' if slug == 'index' else 'article' }}">
+<meta property="og:site_name" content="{{ p(site.lab) }}">
+<meta property="og:title" content="{{ self.title() }}{% if slug != 'index' %} | {{ p(site.lab) }}{% endif %}">
+<meta property="og:description" content="{{ p(site.tagline) }}">
+<meta property="og:url" content="{{ page_url }}">
+<meta property="og:image" content="{{ site.url }}static/img/ogp-{{ lang }}.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="{{ 'ja_JP' if lang == 'ja' else 'en_GB' }}">
+<meta name="twitter:card" content="summary_large_image">
+{% if slug == '404' %}<meta name="robots" content="noindex">{% endif %}
+</head>
+<body class="page-{{ slug }}">
+<a class="skip" href="#main">{{ t('skip') }}</a>
+<header class="masthead">
+  <div class="wrap masthead-inner">
+    <a class="brand" href="{{ navroot }}index.html">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="6" fill="#112330" stroke="#21384a"/><path d="M3 22h5c2 0 2.5-12 5-12s2.5 7 4.5 7 1.5-3 3-3 3 8 8.5 8" fill="none" stroke="#ff4b61" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="brand-text">
+        <span class="brand-name">{{ p(site.lab) }}</span>
+        <span class="brand-aff">{{ '藤田医科大学 医療科学部' if lang == 'ja' else 'Fujita Health University' }}</span>
+      </span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="sitenav">{{ t('menu') }}</button>
+    <nav id="sitenav" class="sitenav" aria-label="{{ t('menu') }}">
+      <ul>
+      {% for s, key in nav %}
+        <li><a href="{{ navroot }}{{ s }}.html"{% if s == slug or (slug == 'hirano' and s == 'members') %} aria-current="page"{% endif %}>{{ t(key) }}</a></li>
+      {% endfor %}
+      </ul>
+      <a class="lang-switch" href="{{ switch_href }}" hreflang="{{ 'en' if lang == 'ja' else 'ja' }}" lang="{{ 'en' if lang == 'ja' else 'ja' }}">{{ t('switch') }}</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+{% block main %}{% endblock %}
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div>
+      <p class="footer-lab">{{ p(site.lab) }}</p>
+      <p>{{ p(site.affiliation) }}</p>
+      <p>{{ p(site.contact.address) }}</p>
+    </div>
+    <div class="footer-meta">
+      <p>{{ t('updated') }}: {{ d(updated) }}</p>
+      <p>&copy; {{ site.founded }}–{{ today.year }} Hirano Laboratory, School of Medical Sciences, Fujita Health University</p>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.querySelector('.menu-toggle'), n=document.getElementById('sitenav');
+  if(b&&n){b.addEventListener('click',function(){var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));n.classList.toggle('open',!o);});}
+})();
+</script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

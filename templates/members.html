@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title %}{{ t('members') }}{% endblock %}
+{% block main %}
+<header class="page-head monitor-grid"><div class="wrap"><h1>{{ t('members') }}</h1></div>{% include '_headtrace.html' %}</header>
+
+<section class="section">
+  <div class="wrap split">
+    <h2 class="section-title">{{ t('faculty') }}</h2>
+    <div>
+    {% for f in members.faculty %}
+      <a class="faculty" href="{{ f.page }}.html">
+        <span class="faculty-title">{{ p(f.title) }}</span>
+        <span class="faculty-name">{{ p(f.name) }}</span>
+        <span class="faculty-more">{{ t('profile') }}</span>
+      </a>
+    {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-tint">
+  <div class="wrap split">
+    <h2 class="section-title">{{ t('students') }}</h2>
+    <div>
+    {% for g in members.current %}
+      <h3 class="sub">{{ p(g.group) }}</h3>
+      <ul class="name-list">
+        {% for n in g.names %}<li>{{ p(n) }}</li>{% endfor %}
+      </ul>
+    {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <h2 class="section-title">{{ t('past_members') }}</h2>
+    <div>
+    {% for u in members.past %}
+      <h3 class="sub">{{ p(u.university) }}</h3>
+      <dl class="alumni">
+      {% for y in u.years %}
+        <dt>{{ p(y.year) }}</dt>
+        <dd>{% for n in y.names %}<span>{{ p(n) }}</span>{% endfor %}</dd>
+      {% endfor %}
+      </dl>
+    {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

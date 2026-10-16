@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block title %}{{ t('publications') }}{% endblock %}
+{% set cats = publications.categories | rejectattr('key', 'equalto', 'domestic') | list if lang == 'en' else publications.categories %}
+{% set ns = namespace(total=0) %}{% for c in cats %}{% set ns.total = ns.total + c['items']|length %}{% endfor %}
+{% block main %}
+<header class="page-head monitor-grid"><div class="wrap"><h1>{{ t('publications') }}</h1></div>{% include '_headtrace.html' %}</header>
+
+<div class="pub-tools">
+  <div class="wrap">
+    <div class="pub-filter" role="group" aria-label="{{ t('publications') }}">
+      <button type="button" data-cat="all" aria-pressed="true">{{ t('pub_all') }}<span class="count">{{ ns.total }}</span></button>
+      {% for c in cats %}
+      <button type="button" data-cat="{{ c.key }}" aria-pressed="false">{{ c[lang] }}<span class="count">{{ c['items']|length }}</span></button>
+      {% endfor %}
+    </div>
+    <label class="pub-search">
+      <span class="visually-hidden">{{ t('pub_search') }}</span>
+      <input type="search" placeholder="{{ t('pub_search') }}" autocomplete="off">
+    </label>
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap">
+    {% for c in cats %}
+    <section class="pub-cat" id="{{ c.key }}" data-cat="{{ c.key }}">
+      <h2 class="pub-cat-title">{{ c[lang] }}<span class="count">{{ c['items']|length }}{{ t('pub_count') }}</span></h2>
+      <ol class="pub-list" reversed>
+      {% for it in c['items'] %}
+        <li>
+          <p>{{ (it.en if lang == 'en' and it.en else it.text) | emph }}{% if it.url %} <a class="pub-link" href="{{ it.url }}" rel="noopener">{{ t('link') }}</a>{% endif %}</p>
+          {% if it.award %}<p class="award">{{ it.award_en if lang == 'en' and it.award_en else it.award }}</p>{% endif %}
+        </li>
+      {% endfor %}
+      </ol>
+    </section>
+    {% endfor %}
+    <p class="pub-empty" hidden>{{ t('pub_none') }}</p>
+  </div>
+</section>
+{% endblock %}
+{% block scripts %}
+<script>
+(function(){
+  var btns=[].slice.call(document.querySelectorAll('.pub-filter button'));
+  var cats=[].slice.call(document.querySelectorAll('.pub-cat'));
+  var q=document.querySelector('.pub-search input');
+  var empty=document.querySelector('.pub-empty');
+  var cur='all';
+  function norm(s){return s.toLowerCase().replace(/\s+/g,'');}
+  cats.forEach(function(c){[].forEach.call(c.querySelectorAll('li'),function(li){li._t=norm(li.textContent);});});
+  function apply(){
+    var term=norm(q.value), shown=0;
+    cats.forEach(function(c){
+      var on=(cur==='all'||c.dataset.cat===cur), n=0;
+      [].forEach.call(c.querySelectorAll('li'),function(li){var m=!term||li._t.indexOf(term)>-1;li.hidden=!m;if(m)n++;});
+      c.hidden=!on||n===0; if(!c.hidden) shown+=n;
+    });
+    empty.hidden=shown>0;
+  }
+  btns.forEach(function(b){b.addEventListener('click',function(){
+    cur=b.dataset.cat; btns.forEach(function(x){x.setAttribute('aria-pressed',String(x===b));}); apply();
+  });});
+  q.addEventListener('input',apply);
+  if(location.hash){var h=location.hash.slice(1);btns.forEach(function(b){if(b.dataset.cat===h)b.click();});}
+})();
+</script>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}{{ t('schedule') }}{% endblock %}
+{% block main %}
+<header class="page-head monitor-grid"><div class="wrap"><h1>{{ t('schedule') }}</h1></div>{% include '_headtrace.html' %}</header>
+<section class="section">
+  <div class="wrap">
+    <p>{{ t('cal_note') }}</p>
+    {% if site.calendar_id %}
+    {% set base = 'https://calendar.google.com/calendar/embed?src=' ~ (site.calendar_id|urlencode) ~ '&ctz=Asia%2FTokyo&hl=' ~ lang ~ '&showPrint=0&showTitle=0&showTz=0' %}
+    <div class="calendar">
+      <iframe class="cal-month" src="{{ base }}&amp;mode=MONTH" title="{{ t('schedule') }}" loading="lazy"></iframe>
+      <iframe class="cal-agenda" src="{{ base }}&amp;mode=AGENDA" title="{{ t('schedule') }}" loading="lazy"></iframe>
+    </div>
+    <p class="cal-open"><a class="btn btn-ghost-light" href="https://calendar.google.com/calendar/embed?src={{ site.calendar_id|urlencode }}&amp;ctz=Asia%2FTokyo&amp;hl={{ lang }}" rel="noopener">{{ t('cal_open') }}</a></p>
+    {% else %}
+    <div class="empty-state">
+      <p>{{ t('cal_empty') }}</p>
+    </div>
+    {% endif %}
+  </div>
+</section>
+{% endblock %}

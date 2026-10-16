@@ -1,0 +1,94 @@
+# 平野 陽豊 プロフィール
+
+name: { ja: 平野 陽豊, en: Harutoyo HIRANO }
+title: { ja: 講師, en: Senior Assistant Professor }
+degree: { ja: 博士（工学）, en: PhD (Engineering) }
+photo: ""   # static/img/ に写真を置いたらファイル名を書く（例: hirano.jpg）
+links:
+  - { label: researchmap, url: "https://researchmap.jp/7000011532" }
+  - { label: ORCID, url: "https://orcid.org/0000-0002-0634-1805" }
+  - { label: KAKEN, url: "https://nrid.nii.ac.jp/ja/nrid/1000050725679/" }
+  - { label: Google Scholar, url: "https://scholar.google.com/citations?user=qBSLipMAAAAJ" }
+
+career:
+  - { when: "2004.3", ja: 国立広島大学附属高等学校 卒業, en: "Graduated from Hiroshima University High School" }
+  - { when: "2008.3", ja: 広島大学工学部第二類（電気・電子・システム・情報系）卒業　学士（工学）, en: "BEng, Cluster 2 (Electrical, Electronic, Systems and Information Engineering), Faculty of Engineering, Hiroshima University" }
+  - { when: "2010.3", ja: 広島大学大学院工学研究科博士課程前期 複雑システム工学専攻 修了　修士（工学）, en: "MEng, Department of Artificial Complex Systems Engineering, Graduate School of Engineering, Hiroshima University" }
+  - { when: "2013.3", ja: 広島大学大学院工学研究科博士課程後期 システムサイバネティクス専攻 修了　博士（工学）, en: "PhD (Eng), Department of System Cybernetics, Graduate School of Engineering, Hiroshima University" }
+  - { when: "2013.4–2015.3", ja: 日本学術振興会 特別研究員（PD）　受入れ：広島大学, en: "JSPS Research Fellow (PD), hosted by Hiroshima University" }
+  - { when: "2015.4–2022.3", ja: 静岡大学 学術院工学領域 電気電子工学系列 助教, en: "Assistant Professor, Department of Electrical and Electronic Engineering, Academic Institute, Shizuoka University" }
+  - { when: "2016.4–2019.3", ja: 浜松職業能力開発短期大学校 非常勤講師（兼任）, en: "Part-time Lecturer, Polytechnic College Hamamatsu" }
+  - { when: "2022.4", ja: 藤田医科大学 医療科学部 研究推進ユニット 医用情報工学分野 講師, en: "Senior Assistant Professor, Department of Medical Information Engineering, Research Promotion Unit, School of Medical Sciences, Fujita Health University" }
+  - { when: "2022.5–", ja: 藤田医科大学 医療科学部 臨床教育連携ユニット 診断機器工学分野 講師, en: "Senior Assistant Professor, Department of Medical Equipment Engineering, Clinical and Educational Collaboration Unit, School of Medical Sciences, Fujita Health University" }
+
+theses:
+  - { kind: { ja: 学士論文, en: Bachelor's thesis }, text: "カプセル型内視鏡のための非接触エネルギー伝送システム（広島大学，2008年3月）", text_en: "A Non-contact Energy Transmission System for Capsule Endoscopes (Hiroshima University, March 2008)" }
+  - { kind: { ja: 修士論文, en: Master's thesis }, text: "A Study on an Insulator Thickness of a Wireless Energy Transmission Transformer for an Artificial Heart（広島大学，2010年3月）", text_en: "A Study on an Insulator Thickness of a Wireless Energy Transmission Transformer for an Artificial Heart (Hiroshima University, March 2010)" }
+  - { kind: { ja: 博士論文, en: Doctoral dissertation }, text: "Noninvasive Measurement of Pulse Pressure Waves for Evaluation of Arterial Mechanical Properties（広島大学，2013年3月）", text_en: "Noninvasive Measurement of Pulse Pressure Waves for Evaluation of Arterial Mechanical Properties (Hiroshima University, March 2013)" }
+
+societies:
+  - { ja: 電気学会, en: The Institute of Electrical Engineers of Japan }
+  - { ja: IEEE EMB Society, en: IEEE Engineering in Medicine and Biology Society }
+  - { ja: 日本循環器学会, en: The Japanese Circulation Society }
+  - { ja: 日本高血圧学会, en: The Japanese Society of Hypertension }
+  - { ja: 日本脈管学会, en: Japanese College of Angiology }
+  - { ja: システム制御情報学会, en: "The Institute of Systems, Control and Information Engineers" }
+  - { ja: 日本生体医工学会, en: Japanese Society for Medical and Biological Engineering }
+  - { ja: 電子情報通信学会, en: "The Institute of Electronics, Information and Communication Engineers" }
+
+awards:
+  - { date: "2019.3.5", ja: "SI2018優秀講演賞", en: "SI2018 Excellent Presentation Award", work: "オシロメトリック式自動血圧計と血管粘弾性モデルに基づく下肢血管内皮機能の評価", work_en: "Evaluation of Lower-Limb Vascular Endothelial Function Based on an Oscillometric Automatic Sphygmomanometer and an Arterial Viscoelastic Model" }
+  - { date: "2018.10.25", ja: "Japanese College of Angiology Award (JCAA) 優秀賞", en: "Japanese College of Angiology Award (JCAA), Excellence Award", work: "椅子型体表脈波計測システムを用いた心拍数と呼吸数の無拘束計測", work_en: "Unconstrained Measurement of Heart Rate and Respiratory Rate Using a Chair-Type Body-Surface Pulse Wave Measurement System" }
+  - { date: "2016.6.24", ja: "日本医療機器学会 平成27年度論文賞", en: "Japanese Society of Medical Instrumentation, Best Paper Award (FY2015)", work: "Head-up tilt試験を利用したパーキンソン病患者の自律神経機能診断支援法の提案", work_en: "A diagnostic support method for evaluating autonomic nervous function of patients with Parkinson's disease using a head-up tilt test" }
+  - { date: "2015.12.16", ja: "SI2015優秀講演賞", en: "SI2015 Excellent Presentation Award", work: "対数線形化末梢血管粘弾性モデルに基づく疼痛評価法の開発", work_en: "Development of a Pain Evaluation Method Based on a Log-Linearized Peripheral Arterial Viscoelastic Model" }
+  - { date: "2014.3.31", ja: "日本人間工学会中国・四国支部 平成25年度優秀論文賞", en: "Japan Ergonomics Society Chugoku-Shikoku Branch, Excellent Paper Award (FY2013)", work: "オシロメトリック法に基づく血管粘弾性の推定", work_en: "Estimation of Arterial Viscoelasticity Based on the Oscillometric Method" }
+  - { date: "2013.6.7", ja: "日本医療機器学会 平成24年度論文賞", en: "Japanese Society of Medical Instrumentation, Best Paper Award (FY2012)", work: "積分カフ脈波拡張率に基づく血管内皮機能の非観血評価", work_en: "Noninvasive Evaluation of Endothelial Function Based on Dilation Rate of Integrated Air-Cuff Plethysmogram" }
+  - { date: "2013.3.31", ja: "日本人間工学会中国・四国支部 平成24年度優秀論文賞", en: "Japan Ergonomics Society Chugoku-Shikoku Branch, Excellent Paper Award (FY2012)", work: "エアパック型体表脈波センサを利用した脈波変動解析", work_en: "Pulse Wave Variability Analysis Using an Air-Pack Body-Surface Pulse Wave Sensor" }
+  - { date: "2012.7.3", ja: "ICME 2012 Best Student Paper Finalist", en: "The 2012 IEEE/ICME International Conference on Complex Medical Engineering, Best Student Paper Finalist", work: "Development of a Palpable Carotid Pulse Pressure Sensor Using Electromagnetic Induction" }
+
+grants:
+  - { period: "2020–2022", role: { ja: 研究代表者, en: PI }, ja: "科学研究費助成事業 若手研究「耳から動脈硬化を発見：確率ニューラルネットワークを用いた血管内皮機能評価法の提案」（総額4,160千円）", en: "JSPS KAKENHI Grant-in-Aid for Early-Career Scientists (total 4,160 thousand JPY)" }
+  - { period: "2019", role: { ja: 研究代表者, en: PI }, ja: "公益財団法人浜松科学技術研究振興会・村田基金研究助成「耳朶表皮しわを利用した動脈硬化早期発見システムのプラットフォーム開発」（総額500千円）", en: "Murata Fund Research Grant, Hamamatsu Foundation for Science and Technology Promotion (total 500 thousand JPY)" }
+  - { period: "2017", role: { ja: 分担研究者, en: Co-investigator }, ja: "公益財団法人はましん地域振興財団助成金「動脈硬化計測のための耳朶表皮計測システム」（総額100千円）", en: "Hamashin Regional Development Foundation Grant (total 100 thousand JPY)" }
+  - { period: "2016–2018", role: { ja: 研究代表者, en: PI }, ja: "科学研究費助成事業 若手研究（B）「下肢動脈硬化を早期発見する：オシロメトリック法を用いた下肢血管内皮機能計測法提案」（総額3,900千円）", en: "JSPS KAKENHI Grant-in-Aid for Young Scientists (B) (total 3,900 thousand JPY)" }
+  - { period: "2016", role: { ja: 研究代表者, en: PI }, ja: "東海産業技術振興財団 第28回研究助成金（総額800千円）", en: "The 28th Research Grant, Tokai Foundation for Technology (total 800 thousand JPY)" }
+  - { period: "2013–2014", role: { ja: 研究代表者, en: PI }, ja: "日本学術振興会 特別研究員奨励費「血管新生を実現可能な超音波血管治療法の提案と動脈硬化度診断支援システムの開発」（総額2,760千円）", en: "JSPS Grant-in-Aid for JSPS Fellows (total 2,760 thousand JPY)" }
+
+projects:
+  - { period: "2022–", ja: "「生体医歯工学共同研究拠点」共同研究「がん温熱治療に最適化された磁性ナノ粒子構造の解析」", en: "Joint research, Research Center for Biomedical Engineering: Analysis of magnetic nanoparticle structures optimised for cancer hyperthermia" }
+  - { period: "2016–2023", ja: "「放射線災害・医科学研究拠点」共同利用・共同研究「低線量放射線による血管機能に及ぼす影響に関する研究」（課題番号：F-19）", en: "Joint research, Network-type Joint Usage/Research Center for Radiation Disaster Medical Science: Effects of low-dose radiation on vascular function (F-19)" }
+
+# 国際連携：大学・学部として結んだ協定のうち，実務の主担当を務めているもの
+international:
+  - { period: "2024–", ja: "藤田医科大学医療科学部放射線学科とコンケン大学（タイ）医学部放射線学科の相互短期交換留学プログラム（実務主担当）", en: "Reciprocal short-term study abroad programme between the Department of Radiological Technology, School of Medical Sciences, Fujita Health University, and the Department of Radiology, Faculty of Medicine, Khon Kaen University, Thailand (lead coordinator)" }
+  - { period: "2024–", ja: "藤田医科大学とネブラスカ大学メディカルセンター（米国）の大学間協定（MOU）（実務主担当）", en: "Inter-university memorandum of understanding between Fujita Health University and the University of Nebraska Medical Center, USA (lead coordinator)" }
+  - { period: "2018–2019", ja: "静岡大学とネブラスカ大学オマハ校（米国）の短期交換留学プログラム（実務担当）", en: "Short-term exchange programme between Shizuoka University and the University of Nebraska Omaha, USA (coordinator)" }
+
+service:
+  - { ja: "2026年度 日本生体医工学会東海支部大会 実行委員", en: "Organising Committee, JSMBE Tokai Branch Meeting 2026" }
+  - { ja: "2025年度 日本生体医工学会東海支部大会 実行委員", en: "Organising Committee, JSMBE Tokai Branch Meeting 2025" }
+  - { ja: "日本生体医工学会 代議員（2025年度～）", en: "Delegate, Japanese Society for Medical and Biological Engineering (FY2025–)" }
+  - { ja: "日本生体医工学会東海支部 幹事・評議委員（2023年度～）", en: "Secretary and Councilor, JSMBE Tokai Branch (FY2023–)" }
+  - { ja: "The Augmented Humans International Conference 2023, PC member", en: "PC member, The Augmented Humans International Conference 2023" }
+  - { ja: "The Augmented Humans International Conference 2022, PC member", en: "PC member, The Augmented Humans International Conference 2022" }
+  - { ja: "2021年度 電子情報通信学会東海支部卒業研究発表会 幹事", en: "Secretary, IEICE Tokai Branch Graduation Research Presentation 2021" }
+  - { ja: "電子情報通信学会東海支部 学生会連絡会委員（2020～2021年度）", en: "Student Liaison Committee Member, IEICE Tokai Branch (FY2020–2021)" }
+  - { ja: "第26回ロボティクスシンポジア 実行委員会委員", en: "Organising Committee Member, The 26th Robotics Symposia" }
+  - { ja: "電気学会東海支部 活動推進員（2018年度～2019年度）", en: "Activity Promotion Member, IEEJ Tokai Branch (FY2018–2019)" }
+
+teaching:
+  - org: { ja: 藤田医科大学大学院, en: "Graduate School, Fujita Health University" }
+    courses: "生体情報工学（2023–）／医学物理学特論（2023）／医用生体工学特論Ⅱ（2024–）／医用生体工学演習（2025–）／医用生体工学特別研究（2025–）"
+    courses_en: "Biomedical Information Engineering (2023–) / Advanced Medical Physics (2023) / Advanced Biomedical Engineering II (2024–) / Biomedical Engineering Practicum (2025–) / Special Research in Biomedical Engineering (2025–)"
+  - org: { ja: 藤田医科大学, en: Fujita Health University }
+    courses: "計測工学（2022–）／電子工学（2022–2023）／応用電子工学実験（2022–2023）／電子工学実習（2022–）／総合基礎工学特論（2022–2024）／総合放射線技術学II（2022–2024）／医用工学II（2023–）／医療英語II（2023–）／電子工学I（2023–）／電子工学II（2024–）／医用工学実験（2023–）／医用工学演習（2023–）／卒業研究（2023–）／卒業研究II（2023–2024）／アセンブリI（2023–）／基礎医学PBL（2023–）／医用工学概論（2023–）／総合臨床検査学Ⅱ（2023–2024）／グローバルスキルと異文化コミュニケーション（2024–）／臨床医学PBL（2025–）／アドバンスリサーチスキル（2025–）／PBL:リスクコミュニケーション（2025–）／総合臨床工学（2025–）／医用生体工学PBL（2025–）／総合臨床検査学（2025–）／システム工学（2026–）"
+    courses_en: "Measurement Engineering (2022–) / Electronics (2022–2023) / Applied Electronics Laboratory (2022–2023) / Electronics Practicum (2022–) / Advanced Fundamental Engineering (2022–2024) / Comprehensive Radiological Technology II (2022–2024) / Medical Engineering II (2023–) / Medical English II (2023–) / Electronics I (2023–) / Electronics II (2024–) / Medical Engineering Laboratory (2023–) / Medical Engineering Exercises (2023–) / Graduation Research (2023–) / Graduation Research II (2023–2024) / Assembly I (2023–) / Basic Medicine PBL (2023–) / Introduction to Medical Engineering (2023–) / Comprehensive Clinical Laboratory Science II (2023–2024) / Global Skills and Intercultural Communication (2024–) / Clinical Medicine PBL (2025–) / Advanced Research Skills (2025–) / PBL: Risk Communication (2025–) / Comprehensive Clinical Engineering (2025–) / Biomedical Engineering PBL (2025–) / Comprehensive Clinical Laboratory Science (2025–) / Systems Engineering (2026–)"
+  - org: { ja: 静岡大学大学院, en: "Graduate School, Shizuoka University" }
+    courses: "電気電子工学セミナー第一・第二（2017–2021）／電気電子工学研究第一・第二（2017–2021）"
+    courses_en: "Seminar in Electrical and Electronic Engineering I and II (2017–2021) / Research in Electrical and Electronic Engineering I and II (2017–2021)"
+  - org: { ja: 静岡大学, en: Shizuoka University }
+    courses: "情報エレクトロニクス実験I・II・III（2015–2021）／卒業研究（2015–2021）／情報エレクトロニクスセミナー（2015–2021）"
+    courses_en: "Information Electronics Laboratory I, II and III (2015–2021) / Graduation Research (2015–2021) / Information Electronics Seminar (2015–2021)"
+  - org: { ja: 浜松職業能力開発短期大学校, en: Polytechnic College Hamamatsu }
+    courses: "数学（2016–2018）"
+    courses_en: "Mathematics (2016–2018)"

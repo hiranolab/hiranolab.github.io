@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% set pr = profile %}
+{% block title %}{{ p(pr.name) }}{% endblock %}
+{% block main %}
+<header class="page-head monitor-grid">
+  <div class="wrap profile-head">
+    {% if pr.photo %}<img class="portrait" src="{{ root }}static/img/{{ pr.photo }}" alt="{{ p(pr.name) }}">{% endif %}
+    <div>
+      <p class="page-kicker"><a href="members.html">{{ t('members') }}</a></p>
+      <h1>{{ p(pr.name) }}</h1>
+      <p class="profile-role"><span>{{ p(pr.title) }}</span><span>{{ p(pr.degree) }}</span></p>
+      {% set ls = pr.links | selectattr('url') | list %}
+      {% if ls %}<p class="profile-links">{% for l in ls %}<a href="{{ l.url }}" rel="noopener">{{ l.label }}</a>{% endfor %}</p>{% endif %}
+    </div>
+  </div>
+{% include '_headtrace.html' %}</header>
+
+<section class="section">
+  <div class="wrap split">
+    <h2 class="section-title">{{ t('career') }}</h2>
+    <dl class="timeline">
+    {% for c in pr.career %}<dt>{{ c.when }}</dt><dd>{{ p(c) }}</dd>{% endfor %}
+    </dl>
+  </div>
+</section>
+
+<section class="section section-tint">
+  <div class="wrap split">
+    <h2 class="section-title">{{ t('awards') }}</h2>
+    <dl class="timeline">
+    {% for a in pr.awards %}<dt>{{ a.date }}</dt><dd>{{ p(a) }}<span class="work">{{ a.work_en if lang == 'en' and a.work_en else a.work }}</span></dd>{% endfor %}
+    </dl>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <h2 class="section-title">{{ t('grants') }}</h2>
+    <dl class="timeline">
+    {% for g in pr.grants %}<dt>{{ g.period }}</dt><dd>{{ p(g) }}<span class="work">{{ p(g.role) }}</span></dd>{% endfor %}
+    </dl>
+  </div>
+</section>
+
+<section class="section section-tint">
+  <div class="wrap split">
+    <h2 class="section-title">{{ t('projects') }}</h2>
+    <dl class="timeline">
+    {% for g in pr.projects %}<dt>{{ g.period }}</dt><dd>{{ p(g) }}</dd>{% endfor %}
+    </dl>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <h2 class="section-title">{{ t('theses') }}</h2>
+    <dl class="timeline wide-dt">
+    {% for th in pr.theses %}<dt>{{ p(th.kind) }}</dt><dd>{{ th.text_en if lang == 'en' and th.text_en else th.text }}</dd>{% endfor %}
+    </dl>
+  </div>
+</section>
+
+<section class="section section-tint">
+  <div class="wrap split">
+    <h2 class="section-title">{{ t('societies') }}</h2>
+    <ul class="plain-list cols">{% for s in pr.societies %}<li>{{ p(s) }}</li>{% endfor %}</ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <h2 class="section-title">{{ t('international') }}</h2>
+    <dl class="timeline">
+    {% for g in pr.international %}<dt>{{ g.period }}</dt><dd>{{ p(g) }}</dd>{% endfor %}
+    </dl>
+  </div>
+</section>
+
+<section class="section section-tint">
+  <div class="wrap split">
+    <h2 class="section-title">{{ t('service') }}</h2>
+    <ul class="plain-list">{% for s in pr.service %}<li>{{ p(s) }}</li>{% endfor %}</ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <h2 class="section-title">{{ t('teaching') }}</h2>
+    <div>
+    {% for g in pr.teaching %}
+      <h3 class="sub">{{ p(g.org) }}</h3>
+      <ul class="course-list">{% for c in (g.courses_en.split(' / ') if lang == 'en' and g.courses_en else g.courses.split('／')) %}<li>{{ c }}</li>{% endfor %}</ul>
+    {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,60 @@
+name: Build and deploy
+
+# push のたびにサイトを生成します。
+#  ・生成結果は毎回「site-preview」（zip）として Actions の実行結果ページに保存されます（非公開・確認用）。
+#  ・公開（GitHub Pages への反映）は、リポジトリ変数 PUBLISH_SITE を true にしたときだけ行います。
+#    Settings → Secrets and variables → Actions → Variables → New repository variable
+#    Name: PUBLISH_SITE / Value: true
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: "0 15 31 12 *"   # 毎年1月1日0時（JST）に再ビルドしてフッターの年を更新
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0   # 「最終更新」日をコミット履歴から求めるため
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml jinja2
+      - run: python build.py
+        env:
+          PUBLISH_SITE: ${{ vars.PUBLISH_SITE }}   # 公開時は「要記入」の項目を出さない
+      - name: 確認用プレビューを保存（非公開）
+        uses: actions/upload-artifact@v6
+        with:
+          name: site-preview
+          path: _site
+          retention-days: 30
+      - name: 公開用に準備
+        if: vars.PUBLISH_SITE == 'true'
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    if: vars.PUBLISH_SITE == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5

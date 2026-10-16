@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% set c = site.contact %}
+{% block title %}{{ t('contact') }}{% endblock %}
+{% block main %}
+<header class="page-head monitor-grid"><div class="wrap"><h1>{{ t('contact') }}</h1></div>{% include '_headtrace.html' %}</header>
+<section class="section">
+  <div class="wrap contact-grid">
+    <div>
+      <p class="lead">{{ t('prospective') }}</p>
+      <dl class="contact-list">
+        <dt>{{ t('email') }}</dt>
+        <dd>{{ c.email_user }}[at_m]{{ c.email_domain }}<span class="mail-note">{{ t('mail_note') }}</span></dd>
+        <dt>{{ t('phone') }}</dt>
+        <dd><a href="tel:{{ c.phone.en|replace('-','') }}">{{ p(c.phone) }}</a></dd>
+        <dt>{{ t('office') }}</dt>
+        <dd>{{ p(c.room) }}</dd>
+        <dt>{{ t('address') }}</dt>
+        <dd>{{ p(site.affiliation) }}<br>{{ p(c.address) }}</dd>
+      </dl>
+    </div>
+    <div class="map">
+      <iframe src="https://maps.google.com/maps?q={{ c.map_query|urlencode }}&z=16&hl={{ lang }}&output=embed" title="{{ t('address') }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,141 @@
+# 研究紹介
+# ─────────────────────────────────────────────
+# themes の各項目：
+#   catch  : 見出し（ひとことで伝わる表現）
+#   title  : 正式なテーマ名
+#   desc   : 2〜3文の説明
+#   papers : 代表論文へのリンク（label は短い表記，なければ papers: []）
+#   icon   : pulse / pressure / vessel / brain / alarm / dialysis / heart / pump / sensor から選択
+#   image  : 図を載せる場合は static/img/ に置いたファイル名（例: theme1.png）
+# 未発表の研究内容は，論文・学会発表で公表されてから追加してください．
+# ─────────────────────────────────────────────
+
+intro:
+  ja:
+    - ヒトは循環，呼吸，消化，体温調整など生命活動維持のために非常に高度で複雑なシステムを持っており，これらは無意識下で制御・情報処理されています．しかし，現代の最先端医学・工学技術を以てしてもこの複雑なシステムの全容を明らかにすることはできていません．
+    - もし，この複雑なシステムを明らかにすることが出来れば，例えば病気が起こるメカニズムを明らかにすること，病気を定量的に診断すること，または新しい病気の治療法確立に役立つ医療機器開発に結び付く可能性があります．
+    - 本研究室では，ヒトが持つ複雑なシステムのモデル化や医療に役立つ新しい工学技術について学々連携・医工連携・産学連携で研究しています．
+  en:
+    - Humans possess highly sophisticated and complex systems—circulation, respiration, digestion and thermoregulation—that are controlled and processed largely without conscious awareness. Even with today's most advanced medicine and engineering, the full picture of these systems remains unknown.
+    - Understanding them could reveal how diseases arise, enable quantitative diagnosis, and lead to new medical devices and therapies.
+    - Our laboratory models the complex systems of the human body and develops new engineering technologies for medicine, in collaboration with other universities, clinicians and industry.
+
+# トップページのモニタ表示（研究室が「測っているもの」）
+#   code  : モニタのチャンネル名のような短い記号（英数字）
+#   unit  : 単位（なければ ""）
+#   label : 何を測っているか
+#   theme : 対応する研究テーマの番号（themes の上から何番目か）
+channels:
+  - { code: "ABP", unit: "mmHg", theme: 3, label: { ja: カフを使わない連続血圧, en: Cuffless continuous blood pressure } }
+  - { code: "β", unit: "", theme: 2, label: { ja: 血管の硬さ（粘弾性）, en: Arterial stiffness (viscoelasticity) } }
+  - { code: "FMD", unit: "%", theme: 1, label: { ja: 血管内皮機能, en: Vascular endothelial function } }
+  - { code: "Hb", unit: "g/dL", theme: 4, label: { ja: 人工心肺中のヘモグロビン濃度, en: Haemoglobin during cardiopulmonary bypass } }
+
+themes:
+  - icon: heart
+    catch:
+      ja: 動脈硬化を早く，手軽に見つける
+      en: Detecting atherosclerosis early and easily
+    title:
+      ja: 動脈硬化早期診断支援システム
+      en: Early diagnosis support system for atherosclerosis
+    desc:
+      ja: 耳たぶに現れるしわ（耳朶皺襞）は，動脈硬化と関係することが知られています．耳の画像を深層学習で解析して血管の状態を推定するシステムや，家庭用血圧計と同じオシロメトリック法で血管内皮機能を測る方法を開発し，特別な装置がなくても受けられる血管の健康診断を目指しています．
+      en: A diagonal crease on the earlobe is known to be associated with atherosclerosis. We are developing deep-learning systems that estimate vascular health from images of the ear, and methods that assess endothelial function with the same oscillometric technique used in home blood pressure monitors, so that a vascular check-up no longer needs specialist equipment.
+    papers:
+      - { label: "Am J Cardiol 2017", url: "https://doi.org/10.1016/j.amjcard.2017.03.029" }
+      - { label: "Sci Rep 2018", url: "https://doi.org/10.1038/s41598-018-27392-3" }
+  - icon: vessel
+    catch:
+      ja: 血管の硬さから痛みや緊張を読み取る
+      en: Reading pain and stress from the stiffness of blood vessels
+    title:
+      ja: 血管力学特性を基にした感性の定量評価
+      en: Quantitative assessment of sensory perception based on vascular mechanical properties
+    desc:
+      ja: 痛みや緊張を感じると，交感神経の働きで末梢の血管が硬くなります．脈波から血管の硬さ（血管粘弾性）を推定するモデルを用いて，言葉にしにくい痛みや感覚を客観的な数値として捉える研究です．fMRIによる脳活動計測と組み合わせた研究も進めています．
+      en: When we feel pain or stress, the sympathetic nervous system stiffens peripheral blood vessels. Using models that estimate arterial viscoelasticity from pulse waves, we turn sensations that are hard to put into words into objective measurements, and combine them with brain imaging using fMRI.
+    papers:
+      - { label: "Sci Rep 2018", url: "https://doi.org/10.1038/s41598-018-21223-1" }
+      - { label: "Sci Rep 2021", url: "https://doi.org/10.1038/s41598-021-83833-6" }
+  - icon: pressure
+    catch:
+      ja: 着けるだけ，座るだけで血圧と心拍を測る
+      en: Measuring blood pressure and heart rate just by wearing or sitting
+    title:
+      ja: 非侵襲連続血圧計測システム
+      en: Non-invasive continuous blood pressure monitoring system
+    desc:
+      ja: カフで腕を締め付けることなく，脈波から血圧や心拍を連続して測る技術を開発しています．電磁誘導を利用した触診できる脈波センサ，椅子の背もたれから脈波を捉える無拘束計測，生分解性の圧電素子を使ったイヤホン型デバイスなどに取り組んでいます．
+      en: We develop technologies that measure blood pressure and heart rate continuously from pulse waves without squeezing the arm with a cuff, including a palpable pulse-wave sensor based on electromagnetic induction, unconstrained monitoring from the backrest of a chair, and an earphone-type device with biodegradable piezoelectric sensors.
+    papers:
+      - { label: "Sci Rep 2019", url: "https://doi.org/10.1038/s41598-019-53808-9" }
+      - { label: "SII 2026", url: "https://ieeexplore.ieee.org/document/11404572" }
+  - icon: pump
+    catch:
+      ja: 人工心肺をより安全に
+      en: Making cardiopulmonary bypass safer
+    title:
+      ja: 体外循環中のヘモグロビン濃度予測
+      en: Prediction of haemoglobin concentration during cardiopulmonary bypass
+    desc:
+      ja: 心臓手術で使う人工心肺では，開始時に血液が希釈されてヘモグロビン濃度が下がります．その値を患者さんのデータから機械学習で予測し，臨床工学技士による人工心肺の準備と管理を支援する研究です．
+      en: When cardiopulmonary bypass begins during heart surgery, the blood is diluted and haemoglobin concentration falls. We predict this value from patient data with machine learning, to support clinical engineers in preparing and managing the heart-lung machine.
+    papers:
+      - { label: "J Extra Corpor Technol 2026", url: "https://doi.org/10.1051/ject/2025071" }
+  - icon: brain
+    catch:
+      ja: 脳卒中後の回復と合併症を予測する
+      en: Predicting recovery and complications after stroke
+    title:
+      ja: 脳卒中後せん妄の予測システム
+      en: Post-stroke delirium prediction system
+    desc:
+      ja: 脳卒中患者さんの検査データや脳画像を機械学習で解析し，気分障害，自動車運転に必要な能力，嚥下・認知機能との関係を明らかにしてきました．これらの知見を生かし，脳卒中後のせん妄を早期に予測するシステムの開発に取り組んでいます．
+      en: Using machine learning on clinical assessments and brain images of stroke patients, we have clarified how lesions and functions relate to mood disorders, driving ability, and swallowing and cognitive function. Building on these findings, we are developing a system that predicts post-stroke delirium at an early stage.
+    papers:
+      - { label: "Sci Rep 2020", url: "https://doi.org/10.1038/s41598-020-76429-z" }
+      - { label: "J NeuroEng Rehabil 2023", url: "https://doi.org/10.1186/s12984-023-01263-z" }
+      - { label: "Sci Rep 2026", url: "https://doi.org/10.1038/s41598-026-52516-5" }
+  - icon: alarm
+    catch:
+      ja: 本当に必要なときに鳴るアラームへ
+      en: Alarms that sound only when they matter
+    title:
+      ja: 医療機器用スマートアラームシステム
+      en: Intelligent alarm system for medical devices
+    desc:
+      ja: 医療現場では誤報や過剰なアラームが医療者の負担となり，重要な警報の見落としにもつながります．生体信号から患者さんの急変を予測する技術を応用し，本当に必要なときに知らせるアラームの実現を目指しています．
+      en: False and excessive alarms burden clinical staff and can cause important warnings to be missed. Applying techniques that predict sudden deterioration from biosignals, we aim to build alarms that alert staff only when it really matters.
+    papers:
+      - { label: "Sci Rep 2020", url: "https://doi.org/10.1038/s41598-020-68627-6" }
+  - icon: dialysis
+    catch:
+      ja: 自宅での透析を支える
+      en: Supporting dialysis at home
+    title:
+      ja: 在宅透析用自己血管内シャント管理システム
+      en: Vascular access monitoring system for home haemodialysis
+    desc:
+      ja: 在宅で血液透析を行う患者さんにとって，シャント（透析のために動脈と静脈をつないだ血管）の状態を保つことは欠かせません．藤田医科大学病院血液浄化センターと連携し，自宅で手軽にシャントの状態を確かめられるシステムの開発を目指しています．
+      en: For patients on home haemodialysis, keeping the vascular access (an arteriovenous fistula created for dialysis) in good condition is essential. Working with the Blood Purification Centre at Fujita Health University Hospital, we aim to develop a system that lets patients check their access easily at home.
+    papers: []
+
+collaborators:
+  - group: { ja: 大学・研究機関, en: Universities and research institutes }
+    items:
+      - { ja: 広島大学大学院先進理工学研究科 生体システム論研究室, en: "Biological Systems Engineering Lab., Graduate School of Advanced Science and Engineering, Hiroshima University" }
+      - { ja: 広島大学大学院医歯薬保健学研究院 心臓血管生理医学教室, en: "Department of Cardiovascular Physiology and Medicine, Graduate School of Biomedical and Health Sciences, Hiroshima University" }
+      - { ja: 広島大学大学院医歯薬保健学研究院 麻酔蘇生学教室, en: "Department of Anaesthesiology and Critical Care, Graduate School of Biomedical and Health Sciences, Hiroshima University" }
+      - { ja: 広島大学原爆放射線医科学研究所 再生医科学部門, en: "Department of Regenerative Medicine, Research Institute for Radiation Biology and Medicine, Hiroshima University" }
+      - { ja: 静岡大学大学院 総合科学技術研究科, en: "Graduate School of Integrated Science and Technology, Shizuoka University" }
+  - group: { ja: 病院, en: Hospitals }
+    items:
+      - { ja: 藤田医科大学病院 脳卒中科, en: "Department of Stroke, Fujita Health University Hospital" }
+      - { ja: 藤田医科大学病院 血液浄化センター, en: "Blood Purification Centre, Fujita Health University Hospital" }
+  - group: { ja: 企業, en: Industry }
+    items:
+      - { ja: 日本光電工業株式会社, en: "Nihon Kohden Corporation" }
+      - { ja: 株式会社日立製作所, en: "Hitachi, Ltd." }
+      - { ja: デルタ工業株式会社, en: "Delta Kogyo Co., Ltd." }
+      - { ja: 日本シグマックス株式会社, en: "Nippon Sigmax Co., Ltd." }

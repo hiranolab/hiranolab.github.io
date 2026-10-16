@@ -1,0 +1,63 @@
+# 配属・進学を考えている方へ（join.html）
+# ─────────────────────────────────────────────
+# 「todo: true」の項目は先生の記入待ちです．記入したら todo の行を削除してください．
+# todo が残っている項目は，プレビューでは黄色の「要記入」表示になり，
+# 公開時（PUBLISH_SITE=true）には自動的に非表示になります．
+# ─────────────────────────────────────────────
+
+lead:
+  ja: 平野研究室では，計測工学・信号処理・機械学習を使って，臨床の現場にある課題を解決する医療機器やシステムをつくっています．工学の知識を医療に生かしたい人，自分で考えたものを形にしてみたい人を歓迎します．
+  en: In the Hirano Laboratory, we use measurement engineering, signal processing and machine learning to build medical devices and systems that solve problems found in clinical practice. We welcome students who want to apply engineering to medicine and who enjoy turning their own ideas into working systems.
+
+sections:
+  - title: { ja: この研究室で身につくこと, en: What you will learn }
+    items:
+      - { ja: ハードウェア：脈波・心電図・血圧などの生体信号を測るためのセンサの開発，計測回路（増幅・フィルタ）の設計と製作，計測装置の組み立てと評価, en: "Hardware: developing sensors for biosignals such as pulse waves, ECG and blood pressure, designing and building measurement circuits (amplifiers and filters), and assembling and evaluating measurement devices" }
+      - { ja: ソフトウェア：計測データを取り込んで解析するプログラミング，雑音除去や特徴抽出などの信号処理，機械学習や生体の数理モデルを使った推定・予測, en: "Software: programming to acquire and analyse measured data, signal processing such as noise removal and feature extraction, and estimation and prediction using machine learning and mathematical models of the body" }
+      - { ja: 臨床の課題から研究の問いを立て，実験・解析・発表までやり遂げる力, en: "Turning a clinical problem into a research question and carrying it through experiments, analysis and presentation" }
+
+  - title: { ja: 臨床・学外とのつながり, en: Links with hospitals and partners }
+    items:
+      - { ja: 藤田医科大学病院の脳卒中科や血液浄化センターなど，臨床現場と連携した研究テーマがあります．, en: "Several projects are carried out with clinical departments such as the Department of Stroke and the Blood Purification Centre at Fujita Health University Hospital." }
+      - { ja: 広島大学などの大学や，医療機器メーカーとの共同研究を行っています．, en: "We collaborate with universities such as Hiroshima University, and with medical device manufacturers." }
+      - { ja: 研究成果は海外の一流雑誌・国際学会で発表しています．, en: "Our results are published in leading international journals and presented at major international conferences." }
+
+  - title: { ja: 卒業生の主な進路, en: Where our graduates go }
+    note: { ja: 順不同．, en: "In no particular order." }
+    careers:
+      - school: { ja: 藤田医科大学, en: Fujita Health University }
+        groups:
+          - kind: { ja: 医療機関, en: Hospitals and clinics }
+            names:
+              - { ja: 藤田医科大学病院, en: Fujita Health University Hospital }
+              - { ja: 聖隷浜松病院, en: Seirei Hamamatsu General Hospital }
+              - { ja: 刈谷豊田総合病院, en: Kariya Toyota General Hospital }
+              - { ja: 総合上飯田第一病院, en: Kamiiida Daiichi General Hospital }
+              - { ja: 江南厚生病院, en: Konan Kosei Hospital }
+              - { ja: 日本赤十字社愛知医療センター名古屋第二病院, en: Japanese Red Cross Aichi Medical Center Nagoya Daini Hospital }
+              - { ja: 一宮西病院, en: Ichinomiya Nishi Hospital }
+              - { ja: 大幸砂田橋クリニック, en: Daiko Sunadabashi Clinic }
+          - kind: { ja: 医療機器メーカー・販売, en: Medical device companies }
+            names:
+              - { ja: 日本光電工業株式会社, en: "Nihon Kohden Corporation" }
+              - { ja: フクダ電子中部販売株式会社, en: "Fukuda Denshi Chubu Hanbai Co., Ltd." }
+      - school: { ja: 静岡大学（工学部）, en: Shizuoka University }
+        groups:
+          - kind: { ja: 企業, en: Companies }
+            names:
+              - { ja: 日本光電工業株式会社, en: "Nihon Kohden Corporation" }
+              - { ja: 株式会社ニデック, en: "NIDEK CO., LTD." }
+              - { ja: 株式会社日立産業制御ソリューションズ, en: "Hitachi Industry & Control Solutions, Ltd." }
+              - { ja: スズキ株式会社, en: "Suzuki Motor Corporation" }
+              - { ja: 株式会社アイヴィス, en: "IVIS, Inc." }
+      # 進学は両大学をまとめて表示（kind を書かないと小見出しなしで並ぶ）
+      - school: { ja: 進学, en: Further study }
+        groups:
+          - names:
+              - { ja: 自大学大学院, en: Graduate school at the same university }
+              - { ja: 他大学大学院, en: Graduate schools at other universities }
+
+  - title: { ja: 見学・相談, en: Visits and enquiries }
+    items:
+      - { ja: 研究室の見学や研究内容の相談は随時受け付けています．メールで希望日時をお知らせください．, en: "You are welcome to visit the lab or ask about our research at any time. Please email us with your preferred dates." }
+    contact: true

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m with context %}
+{% block title %}{{ t('news') }}{% endblock %}
+{% block main %}
+<header class="page-head monitor-grid"><div class="wrap"><h1>{{ t('news') }}</h1></div>{% include '_headtrace.html' %}</header>
+<section class="section">
+  <div class="wrap narrow">
+    {{ m.news_list(news) }}
+  </div>
+</section>
+{% endblock %}

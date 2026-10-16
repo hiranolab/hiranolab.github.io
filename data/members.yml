@@ -1,0 +1,73 @@
+# メンバー
+# ─────────────────────────────────────────────
+# 年度替わりの更新：
+#   1. 卒業生を current から past の該当年度に移す
+#   2. 新しく配属された学生を current に追加する
+# ─────────────────────────────────────────────
+
+faculty:
+  - name: { ja: 平野 陽豊, en: Harutoyo HIRANO }
+    title: { ja: 講師, en: Senior Assistant Professor }
+    page: hirano
+
+current:
+  - group: { ja: 大学院生（修士2年）, en: Graduate students (M2) }
+    names:
+      - { ja: 吉川 乃愛, en: Noa YOSHIKAWA }
+  - group: { ja: 学部4年生, en: Undergraduate students (4th year) }
+    names:
+      - { ja: 川原 実紗, en: Misa KAWAHARA }
+      - { ja: 塩澤 亜由, en: Ayu SHIOZAWA }
+
+past:
+  - university: { ja: 藤田医科大学, en: Fujita Health University }
+    years:
+      - year: { ja: 2025年度卒, en: Class of FY2025 }
+        names:
+          - { ja: 後藤 祐寧, en: Yuyasu GOTO }
+          - { ja: 中野 歩, en: Ayumi NAKANO }
+      - year: { ja: 2024年度卒, en: Class of FY2024 }
+        names:
+          - { ja: 井上 駿, en: Shun INOUE }
+          - { ja: 杉山 義尚, en: Yoshinao SUGIYAMA }
+          - { ja: 惣川 日向, en: Hina SOUKAWA }
+          - { ja: 竹本 姫梨, en: Himena TAKEMOTO }
+          - { ja: 玉田 知里, en: Chisato TAMADA }
+          - { ja: 山本 優羽音, en: Yune YAMAMOTO }
+          - { ja: 吉田 翔瑛, en: Shoei YOSHIDA }
+      - year: { ja: 2023年度卒, en: Class of FY2023 }
+        names:
+          - { ja: 大野 剛昇, en: Takeru OHNO }
+          - { ja: 杉浦 航生, en: Kousei SUGIURA }
+          - { ja: 高木 駿輔, en: Shunsuke TAKAGI }
+          - { ja: 成瀬 瞬, en: Shun NARUSE }
+          - { ja: 宮下 怜, en: Ryo MIYASHITA }
+  - university: { ja: 静岡大学, en: Shizuoka University }
+    years:
+      - year: { ja: 2021年度卒, en: Class of FY2021 }
+        names:
+          - { ja: 大川 健気, en: Kenki OKAWA }
+          - { ja: 桑原 尉斗, en: Joto KUWAHARA }
+          - { ja: 後藤 春樹, en: Haruki GOTO }
+          - { ja: 本間 代典, en: Daisuke HOMMA }
+      - year: { ja: 2020年度卒, en: Class of FY2020 }
+        names:
+          - { ja: Hoang Son Nam, en: Hoang Son NAM }
+          - { ja: 内田 皓介, en: Kohsuke UCHIDA }
+      - year: { ja: 2019年度卒, en: Class of FY2019 }
+        names:
+          - { ja: 原 朔理, en: Motomasa HARA }
+      - year: { ja: 2018年度卒, en: Class of FY2018 }
+        names:
+          - { ja: 植松 大智, en: Daichi UEMATSU }
+          - { ja: 渡部 祐貴, en: Yuki WATABE }
+      - year: { ja: 2017年度卒, en: Class of FY2017 }
+        names:
+          - { ja: 磯村 悠介, en: Yusuke ISOMURA }
+      - year: { ja: 2016年度卒, en: Class of FY2016 }
+        names:
+          - { ja: 秋津 琢海, en: Takumi AKITSU }
+      - year: { ja: 2015年度卒, en: Class of FY2015 }
+        names:
+          - { ja: 勝俣 良亮, en: Ryosuke KATSUMATA }
+          - { ja: 庄村 芽生, en: Mei SHOMURA }

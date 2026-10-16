@@ -1,0 +1,37 @@
+# サイト全体の設定
+# ─────────────────────────────────────────────
+
+lab:
+  ja: 平野研究室
+  en: Hirano Laboratory
+affiliation:
+  ja: 藤田医科大学 医療科学部 臨床教育連携ユニット 診断機器工学分野
+  en: Department of Medical Equipment Engineering, Clinical and Educational Collaboration Unit, School of Medical Sciences, Fujita Health University
+tagline:
+  ja: ヒトの複雑な生体システムを工学で読み解き，医療に役立つ技術をつくる
+  en: Decoding the body’s complex systems with engineering, and turning them into technology for medicine.
+founded: 2022
+
+# 公開先のURL（独自ドメインを取得したらここを書き換える）
+url: "https://harutoyohirano.github.io/hirano-lab/"
+
+# Googleカレンダーの埋め込み
+#   Googleカレンダー → 研究室用カレンダーの「設定と共有」→「カレンダーの統合」にある
+#   「カレンダー ID」（例: xxxxxxxx@group.calendar.google.com）を貼り付ける。
+#   空欄のあいだは、スケジュールページに準備中の表示が出ます。
+calendar_id: "hhiranolab@gmail.com"
+
+contact:
+  phone:
+    ja: "0562-93-9614"
+    en: "+81-562-93-9614"
+  # メールアドレスは迷惑メール対策のため，ページ上では「ユーザー名[at_m]ドメイン」と表示します
+  email_user: "harutoyo.hirano"
+  email_domain: "fujita-hu.ac.jp"
+  room:
+    ja: 7号館 409室（教員居室）
+    en: Building 7, Room 409 (Faculty office)
+  address:
+    ja: 〒470-1192 愛知県豊明市沓掛町田楽ヶ窪1番地98
+    en: 1-98 Dengakugakubo, Kutsukake-cho, Toyoake, Aichi 470-1192, Japan
+  map_query: "藤田医科大学 7号館"
