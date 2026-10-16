@@ -12,8 +12,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{{ root }}static/style.css">
-<link rel="icon" href="{{ root }}static/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="{{ root }}static/style.css?v={{ v }}">
+<link rel="icon" href="{{ root }}static/img/favicon.svg?v={{ v }}" type="image/svg+xml">
 <link rel="apple-touch-icon" href="{{ root }}static/img/apple-touch-icon.png">
 {% set page_url = site.url ~ ('' if lang == 'ja' else 'en/') ~ slug ~ '.html' %}
 <meta property="og:type" content="{{ 'website' if slug == 'index' else 'article' }}">

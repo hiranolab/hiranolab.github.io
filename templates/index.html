@@ -6,7 +6,7 @@
   <canvas class="flow" id="flow" aria-hidden="true"></canvas>
   <div class="wrap"><div class="hud">
     <p class="hero-aff">{{ p(site.affiliation) }}</p>
-    <h1 class="hero-title"><img class="hero-logo" src="{{ root }}static/img/logo-mark.svg" alt="" width="120" height="120"><span>{{ p(site.lab) }}</span></h1>
+    <h1 class="hero-title"><img class="hero-logo" src="{{ root }}static/img/logo-mark.svg?v={{ v }}" alt="" width="120" height="120"><span>{{ p(site.lab) }}</span></h1>
     <p class="hero-tagline">{{ p(site.tagline) }}</p>
     <div class="hero-actions">
       <a class="btn btn-primary" href="research.html">{{ t('cta_research') }}</a>

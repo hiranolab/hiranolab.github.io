@@ -209,6 +209,13 @@ def main():
         lstrip_blocks=True,
     )
     env.filters["emph"] = emph_name
+    # CSS・画像を更新したときにブラウザの古いキャッシュを使わせないための印（中身から計算）
+    import hashlib
+    h = hashlib.sha1()
+    for f in sorted((ROOT / "static").rglob("*")):
+        if f.is_file():
+            h.update(f.read_bytes())
+    env.globals["v"] = h.hexdigest()[:8]
 
     if OUT.exists():
         shutil.rmtree(OUT)
