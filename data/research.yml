@@ -5,7 +5,7 @@
 #   title  : 正式なテーマ名
 #   desc   : 2〜3文の説明
 #   papers : 代表論文へのリンク（label は短い表記，なければ papers: []）
-#   icon   : pulse / pressure / vessel / brain / alarm / dialysis / heart / pump / sensor から選択
+#   icon   : pulse / pressure / vessel / brain / alarm / forecast / dialysis / heart / pump / sensor から選択
 #   image  : 図を載せる場合は static/img/ に置いたファイル名（例: theme1.png）
 # 未発表の研究内容は，論文・学会発表で公表されてから追加してください．
 # ─────────────────────────────────────────────
@@ -97,16 +97,16 @@ themes:
       - { label: "Sci Rep 2020", url: "https://doi.org/10.1038/s41598-020-76429-z" }
       - { label: "J NeuroEng Rehabil 2023", url: "https://doi.org/10.1186/s12984-023-01263-z" }
       - { label: "Sci Rep 2026", url: "https://doi.org/10.1038/s41598-026-52516-5" }
-  - icon: alarm
+  - icon: forecast
     catch:
-      ja: 本当に必要なときに鳴るアラームへ
-      en: Alarms that sound only when they matter
+      ja: 体調の変化をいち早く捉える
+      en: Spotting changes in health early
     title:
-      ja: 医療機器用スマートアラームシステム
-      en: Intelligent alarm system for medical devices
+      ja: 生体信号による体調不良の予測
+      en: Predicting declines in health from biosignals
     desc:
-      ja: 医療現場では誤報や過剰なアラームが医療者の負担となり，重要な警報の見落としにもつながります．生体信号から患者さんの急変を予測する技術を応用し，本当に必要なときに知らせるアラームの実現を目指しています．
-      en: False and excessive alarms burden clinical staff and can cause important warnings to be missed. Applying techniques that predict sudden deterioration from biosignals, we aim to build alarms that alert staff only when it really matters.
+      ja: 心拍や脈波などの生体信号には，体調が崩れる前から小さな変化が現れることがあります．こうした変化を信号処理と機械学習で捉え，体調不良の兆しを早めに知らせる技術の開発を目指しています．
+      en: Small changes can appear in biosignals such as heart rate and pulse waves before a person's health deteriorates. We aim to detect these changes with signal processing and machine learning and give early warning of illness.
     papers:
       - { label: "Sci Rep 2020", url: "https://doi.org/10.1038/s41598-020-68627-6" }
   - icon: dialysis

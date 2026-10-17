@@ -71,9 +71,10 @@ img { max-width: 100%; height: auto; }
 .lang-switch { font-size: .85rem !important; border: 1px solid var(--line) !important; border-radius: 999px; padding: .2rem .8rem !important; }
 .menu-toggle { display: none; }
 .sitenav a, .brand-name { white-space: nowrap; }
-html[lang="en"] .sitenav ul { gap: 1rem; }
+html[lang="en"] .sitenav { gap: 1rem; }
+html[lang="en"] .sitenav ul { gap: .8rem; }
 
-@media (max-width: 980px) {
+@media (max-width: 1080px) {
   .menu-toggle {
     display: block; font: inherit; font-size: .9rem; color: var(--ink); background: none;
     border: 1px solid var(--line); border-radius: 999px; padding: .3rem .9rem; cursor: pointer;
@@ -86,7 +87,7 @@ html[lang="en"] .sitenav ul { gap: 1rem; }
   .sitenav a[aria-current="page"] { border-bottom-color: var(--line); color: var(--artery); }
   .lang-switch { align-self: flex-start; margin-top: .9rem; }
 }
-@media (max-width: 1180px) {
+@media (max-width: 1260px) {
   html[lang="en"] .menu-toggle {
     display: block; font: inherit; font-size: .9rem; color: var(--ink); background: none;
     border: 1px solid var(--line); border-radius: 999px; padding: .3rem .9rem; cursor: pointer;
@@ -271,13 +272,13 @@ html[lang="en"] .news-list li { grid-template-columns: 8rem 1fr; }
 .lang-switch { border-color: var(--night-line) !important; }
 .lang-switch:hover { border-color: var(--abp) !important; }
 :focus-visible { outline-color: var(--abp); }
-@media (max-width: 980px) {
+@media (max-width: 1080px) {
   .menu-toggle { color: var(--on-night); border-color: var(--night-line); }
   .sitenav { background: var(--night); border-bottom-color: var(--night-line); }
   .sitenav ul a { border-bottom-color: var(--night-line); }
   .sitenav a[aria-current="page"] { border-bottom-color: var(--night-line); color: var(--abp); }
 }
-@media (max-width: 1180px) {
+@media (max-width: 1260px) {
   html[lang="en"] .menu-toggle { color: var(--on-night); border-color: var(--night-line); }
   html[lang="en"] .sitenav { background: var(--night); border-bottom-color: var(--night-line); }
   html[lang="en"] .sitenav ul a { border-bottom-color: var(--night-line); }
@@ -465,3 +466,21 @@ html[lang="ja"] .dark-zone .news-list time { font-family: var(--sans); font-size
 .career-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .4rem; }
 .career-list li { font-size: .9rem; padding: .25rem .75rem; border: 1px solid var(--line); border-radius: 999px; background: var(--paper); }
 .career-note { margin: 1.25rem 0 0; font-size: .82rem; color: var(--ink-soft); }
+
+/* 企業・研究機関の方へ */
+.section-tight { padding-top: 0; }
+.seed-grid { list-style: none; padding: 0; margin: 1rem 0 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+@media (max-width: 640px) { .seed-grid { grid-template-columns: 1fr; } }
+.seed { background: var(--paper); border: 1px solid var(--line); border-top: 3px solid var(--artery); border-radius: 6px; padding: 1.1rem 1.2rem 1rem; display: flex; flex-direction: column; gap: .45rem; }
+.seed h4 { margin: 0; font-family: var(--serif); font-size: 1.05rem; line-height: 1.5; }
+.seed p { margin: 0; font-size: .93rem; color: var(--ink-soft); line-height: 1.75; }
+.seed-links { display: flex; flex-wrap: wrap; gap: .25rem .9rem; margin-top: auto !important; padding-top: .3rem; }
+.seed-links a { font-size: .85rem; color: var(--steel); }
+.seed-ex { flex-basis: 100%; font-size: .78rem; color: var(--ink-soft); letter-spacing: .04em; }
+.chips { list-style: none; padding: 0; margin: 0 0 1.2rem; display: flex; flex-wrap: wrap; gap: .5rem; }
+.chips li { border: 1px solid var(--line); background: var(--paper); border-radius: 999px; padding: .2rem .9rem; font-size: .92rem; }
+.steps { list-style: none; padding: 0; margin: 0; display: grid; gap: .7rem; counter-reset: step; }
+.steps li { counter-increment: step; display: flex; gap: .8rem; align-items: baseline; }
+.steps li::before { content: counter(step); flex: none; width: 1.7rem; height: 1.7rem; border-radius: 999px; border: 1.5px solid var(--artery); color: var(--artery);
+  font-family: var(--num); font-weight: 600; display: inline-flex; align-items: center; justify-content: center; transform: translateY(.15rem); }
+.industry-band { background: var(--paper-tint); border-top: 1px solid var(--line); }

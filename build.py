@@ -34,6 +34,7 @@ PAGES = [
     ("news", "news.html", "news"),
     ("schedule", "schedule.html", "schedule"),
     ("join", "join.html", "join"),
+    ("industry", "industry.html", "industry"),
     ("contact", "contact.html", "contact"),
     ("404", "404.html", None),
 ]
@@ -47,6 +48,7 @@ T = {
     "schedule": {"ja": "スケジュール", "en": "Schedule"},
     "contact": {"ja": "連絡先", "en": "Contact"},
     "join": {"ja": "配属・進学希望の方へ", "en": "Prospective students"},
+    "industry": {"ja": "産学連携", "en": "Industry"},
     "key_papers": {"ja": "代表的な論文", "en": "Key papers"},
     "trace_label": {"ja": "動脈圧波形", "en": "Arterial pressure"},
     "cta_research": {"ja": "研究を見る", "en": "Explore our research"},
@@ -191,7 +193,7 @@ def last_updated():
 
 
 def main():
-    data = {n: load(n) for n in ["site", "news", "members", "research", "publications", "profile", "join"]}
+    data = {n: load(n) for n in ["site", "news", "members", "research", "publications", "profile", "join", "industry"]}
     # ニュースは書いた順に関係なく新しい順に並べる（同じ日付は書いた順のまま）
     data["news"] = sorted(data["news"], key=lambda n: str(n["date"]), reverse=True)
     pub_total = sum(len(c["items"]) for c in data["publications"]["categories"])

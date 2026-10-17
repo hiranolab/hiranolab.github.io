@@ -1,0 +1,63 @@
+# 産学連携ページ（industry.html）と，トップページの「企業・研究機関の方へ」の帯
+# ─────────────────────────────────────────────
+# 「todo: true」の項目は先生の確認待ちです．確認したら todo の行を削除してください．
+# todo が残っている項目は，プレビューでは黄色の「要記入」表示になり，公開時には表示されません．
+# ─────────────────────────────────────────────
+
+title: { ja: 企業・研究機関の方へ, en: For companies and research partners }
+
+lead:
+  ja: 平野研究室では，生体計測・信号処理・機械学習の技術を使って，医療機器メーカーをはじめとする企業や研究機関と共同研究を行っています．技術相談や共同研究のご提案を歓迎します．
+  en: We use biomedical measurement, signal processing and machine learning to carry out joint research with companies, including medical device manufacturers, and with research institutes. We welcome technical enquiries and proposals for collaboration.
+
+# トップページの帯に出す短い文
+band:
+  ja: 生体計測・信号処理・機械学習の技術で，製品開発や臨床評価をお手伝いします．技術相談・共同研究のご相談はお気軽にどうぞ．
+  en: Our expertise in biomedical measurement, signal processing and machine learning can support your product development and clinical evaluation. Please feel free to contact us about technical questions or joint research.
+
+seeds_title: { ja: 取り組めるテーマ, en: What we can work on together }
+seeds:
+  - title: { ja: 生体計測・センシング, en: Biomedical sensing and measurement }
+    body:
+      ja: 脈波・心電図・血圧などの生体信号を測るセンサや計測回路の設計・試作．身に着ける・座るだけで測れるウェアラブル・無拘束計測にも対応します．
+      en: Design and prototyping of sensors and measurement circuits for biosignals such as pulse waves, ECG and blood pressure, including wearable and unobtrusive measurement.
+    themes: [3]
+  - title: { ja: 生体信号処理・解析, en: Biosignal processing and analysis }
+    body:
+      ja: 雑音除去や特徴抽出などの信号処理と，生体の数理モデルを使った生理指標（血管の硬さなど）の推定．
+      en: "Signal processing such as noise removal and feature extraction, and estimation of physiological indices (such as arterial stiffness) using mathematical models of the body."
+    themes: [2, 1]
+  - title: { ja: 医療データ×機械学習, en: Machine learning for medical data }
+    body:
+      ja: 生体信号・検査値・画像などの医療データから予測モデルを構築し，体調不良の予測や，診断・治療の判断を支援する仕組みをつくります．
+      en: Building prediction models from medical data such as biosignals, laboratory values and images to predict declines in health and support diagnostic and treatment decisions.
+    themes: [6, 4, 5]
+  - title: { ja: 医療機器の開発支援・評価, en: Development support and evaluation of medical devices }
+    body:
+      ja: 臨床現場のニーズをふまえた機器の企画・改良や，ヒトを対象とした計測実験による性能評価．在宅で使えるモニタリング機器の開発にも取り組んでいます．
+      en: Planning and improving devices based on clinical needs, and evaluating performance through measurement experiments with human participants. We also develop monitoring devices that can be used at home.
+    themes: [7]
+
+strengths_title: { ja: 研究室の特徴, en: What we offer }
+strengths:
+  - { ja: 藤田医科大学病院の診療科と連携した研究の実績があり，医療現場の課題に即した開発と評価ができます．, en: "We have a track record of research with clinical departments at Fujita Health University Hospital, so development and evaluation can be grounded in real clinical needs." }
+  - { ja: センサや計測回路の試作から，信号処理・機械学習による解析，臨床での評価まで一貫して取り組めます．, en: "We can take a project from prototyping sensors and measurement circuits, through signal processing and machine-learning analysis, to clinical evaluation." }
+  - { ja: 研究成果を国際学術誌や国際会議で発表し，特許の取得にもつなげてきました．, en: "Our results have been published in international journals and conferences, and have led to a granted patent." }
+
+forms_title: { ja: ご相談の形と流れ, en: How we can work together }
+forms_todo: false
+forms:
+  - { ja: 技術相談, en: Technical consultation }
+  - { ja: 共同研究, en: Joint research }
+  - { ja: 受託研究, en: Contract research }
+  - { ja: 学術指導, en: Academic advice }
+steps:
+  - { ja: メールでご相談ください（ご関心のある技術や課題を簡単にお知らせください）．, en: "Contact us by email with a brief description of the technology or problem you are interested in." }
+  - { ja: 打ち合わせ（オンライン可）で，課題や進め方を一緒に検討します．, en: "We meet (online is fine) to discuss the problem and how we might work on it together." }
+steps_todo_note: { ja: 受け付ける相談の形を確認してください, en: "Please confirm the types of collaboration accepted" }
+
+record_title: { ja: 共同研究の実績, en: Track record }
+
+contact_note:
+  ja: 技術相談や共同研究のご相談は，下記のメールアドレスまでお気軽にご連絡ください．
+  en: "For technical enquiries or joint research, please contact us at the email address below."

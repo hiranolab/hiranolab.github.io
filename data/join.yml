@@ -37,7 +37,7 @@ sections:
               - { ja: 日本赤十字社愛知医療センター名古屋第二病院, en: Japanese Red Cross Aichi Medical Center Nagoya Daini Hospital }
               - { ja: 一宮西病院, en: Ichinomiya Nishi Hospital }
               - { ja: 大幸砂田橋クリニック, en: Daiko Sunadabashi Clinic }
-          - kind: { ja: 医療機器メーカー・販売, en: Medical device companies }
+          - kind: { ja: 企業, en: Companies }
             names:
               - { ja: 日本光電工業株式会社, en: "Nihon Kohden Corporation" }
               - { ja: フクダ電子中部販売株式会社, en: "Fukuda Denshi Chubu Hanbai Co., Ltd." }

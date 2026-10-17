@@ -73,6 +73,15 @@
     </div>
   </div>
 </section>
+<section class="section industry-band">
+  <div class="wrap split">
+    <h2 class="section-title">{{ p(industry.title) }}</h2>
+    <div>
+      <p>{{ p(industry.band) }}</p>
+      <div class="hero-actions"><a class="btn btn-ghost-light" href="industry.html">{{ '共同研究・技術相談について' if lang == 'ja' else 'Joint research and technical enquiries' }}</a></div>
+    </div>
+  </div>
+</section>
 {% endblock %}
 {% block scripts %}
 <script>

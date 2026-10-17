@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% set c = site.contact %}
+{% block title %}{{ t('industry') }}{% endblock %}
+{% block main %}
+<header class="page-head monitor-grid"><div class="wrap"><h1>{{ t('industry') }}</h1></div>{% include '_headtrace.html' %}</header>
+{% set ind = industry %}
+<section class="section">
+  <div class="wrap prose">
+    <p class="lead">{{ p(ind.lead) }}</p>
+  </div>
+</section>
+<section class="section section-tint" id="seeds">
+  <div class="wrap split">
+    <h2 class="section-title">{{ p(ind.seeds_title) }}</h2>
+    <div>
+      <ul class="seed-grid">
+        {% for sd in ind.seeds %}
+        <li class="seed">
+          <h4>{{ p(sd.title) }}</h4>
+          <p>{{ p(sd.body) }}</p>
+          <p class="seed-links"><span class="seed-ex">{{ '研究例' if lang == 'ja' else 'Examples' }}</span>{% for th in sd.themes %}<a href="research.html#theme-{{ th }}">{{ p(research.themes[th - 1].title) }}</a>{% endfor %}</p>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap split">
+    <h2 class="section-title">{{ p(ind.strengths_title) }}</h2>
+    <div>
+      <ul class="plain-list join-list">{% for it in ind.strengths %}<li>{{ p(it) }}</li>{% endfor %}</ul>
+    </div>
+  </div>
+</section>
+{% if not (publish and ind.forms_todo) %}
+<section class="section section-tint">
+  <div class="wrap split">
+    <h2 class="section-title">{{ p(ind.forms_title) }}</h2>
+    <div>
+      {% if ind.forms_todo and not publish %}<p class="todo-badge">{{ t('todo') }}{{ '：' if lang == 'ja' else ': ' }}{{ p(ind.steps_todo_note) }}</p>{% endif %}
+      <ul class="chips">{% for f in ind.forms %}<li>{{ p(f) }}</li>{% endfor %}</ul>
+      <ol class="steps">{% for st in ind.steps %}<li>{{ p(st) }}</li>{% endfor %}</ol>
+    </div>
+  </div>
+</section>
+{% endif %}
+<section class="section">
+  <div class="wrap split">
+    <h2 class="section-title">{{ p(ind.record_title) }}</h2>
+    <div>
+      {% for g in research.collaborators if g.group.en == 'Industry' %}
+      <ul class="career-list">{% for it in g['items'] %}<li>{{ p(it) }}</li>{% endfor %}</ul>
+      {% endfor %}
+      <p class="more"><a href="publications.html#patent">{{ '特許' if lang == 'ja' else 'Patents' }}</a>　<a href="research.html">{{ t('research') }}</a></p>
+    </div>
+  </div>
+</section>
+<section class="section section-tint">
+  <div class="wrap split">
+    <h2 class="section-title">{{ t('contact') }}</h2>
+    <div>
+      <p>{{ p(ind.contact_note) }}</p>
+      <dl class="contact-list">
+        <dt>{{ t('email') }}</dt>
+        <dd>{{ c.email_user }}[at_m]{{ c.email_domain }}<span class="mail-note">{{ t('mail_note') }}</span></dd>
+      </dl>
+      <p class="more"><a href="contact.html">{{ t('contact') }}</a></p>
+    </div>
+  </div>
+</section>
+{% endblock %}
