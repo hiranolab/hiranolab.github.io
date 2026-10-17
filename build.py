@@ -88,10 +88,6 @@ T = {
         "ja": "スケジュールは準備中です．",
         "en": "The schedule will be available soon.",
     },
-    "cal_note": {
-        "ja": "ゼミ，学会発表，学内行事などの予定を掲載しています．",
-        "en": "Lab meetings, conference presentations and campus events.",
-    },
     "phone": {"ja": "電話", "en": "Phone"},
     "email": {"ja": "メール", "en": "Email"},
     "mail_note": {"ja": "迷惑メール対策のため，[at_m] を @ に置き換えて送信してください．", "en": "To prevent spam, please replace [at_m] with @."},

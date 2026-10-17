@@ -4,7 +4,6 @@
 <header class="page-head monitor-grid"><div class="wrap"><h1>{{ t('schedule') }}</h1></div>{% include '_headtrace.html' %}</header>
 <section class="section">
   <div class="wrap">
-    <p>{{ t('cal_note') }}</p>
     {% if site.calendar_id %}
     {% set base = 'https://calendar.google.com/calendar/embed?src=' ~ (site.calendar_id|urlencode) ~ '&ctz=Asia%2FTokyo&hl=' ~ lang ~ '&showPrint=0&showTitle=0&showTz=0' %}
     <div class="calendar">
