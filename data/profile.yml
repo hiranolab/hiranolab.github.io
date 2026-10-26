@@ -11,20 +11,20 @@ links:
   - { label: Google Scholar, url: "https://scholar.google.com/citations?user=qBSLipMAAAAJ" }
 
 career:
-  - { when: "2004.3", ja: 国立広島大学附属高等学校 卒業, en: "Graduated from Hiroshima University High School" }
-  - { when: "2008.3", ja: 広島大学工学部第二類（電気・電子・システム・情報系）卒業　学士（工学）, en: "BEng, Cluster 2 (Electrical, Electronic, Systems and Information Engineering), Faculty of Engineering, Hiroshima University" }
-  - { when: "2010.3", ja: 広島大学大学院工学研究科博士課程前期 複雑システム工学専攻 修了　修士（工学）, en: "MEng, Department of Artificial Complex Systems Engineering, Graduate School of Engineering, Hiroshima University" }
-  - { when: "2013.3", ja: 広島大学大学院工学研究科博士課程後期 システムサイバネティクス専攻 修了　博士（工学）, en: "PhD (Eng), Department of System Cybernetics, Graduate School of Engineering, Hiroshima University" }
-  - { when: "2013.4–2015.3", ja: 日本学術振興会 特別研究員（PD）　受入れ：広島大学, en: "JSPS Research Fellow (PD), hosted by Hiroshima University" }
-  - { when: "2015.4–2022.3", ja: 静岡大学 学術院工学領域 電気電子工学系列 助教, en: "Assistant Professor, Department of Electrical and Electronic Engineering, Academic Institute, Shizuoka University" }
-  - { when: "2016.4–2019.3", ja: 浜松職業能力開発短期大学校 非常勤講師（兼任）, en: "Part-time Lecturer, Polytechnic College Hamamatsu" }
-  - { when: "2022.4", ja: 藤田医科大学 医療科学部 研究推進ユニット 医用情報工学分野 講師, en: "Senior Assistant Professor, Department of Medical Information Engineering, Research Promotion Unit, School of Medical Sciences, Fujita Health University" }
   - { when: "2022.5–", ja: 藤田医科大学 医療科学部 臨床教育連携ユニット 診断機器工学分野 講師, en: "Senior Assistant Professor, Department of Medical Equipment Engineering, Clinical and Educational Collaboration Unit, School of Medical Sciences, Fujita Health University" }
+  - { when: "2022.4", ja: 藤田医科大学 医療科学部 研究推進ユニット 医用情報工学分野 講師, en: "Senior Assistant Professor, Department of Medical Information Engineering, Research Promotion Unit, School of Medical Sciences, Fujita Health University" }
+  - { when: "2016.4–2019.3", ja: 浜松職業能力開発短期大学校 非常勤講師（兼任）, en: "Part-time Lecturer, Polytechnic College Hamamatsu" }
+  - { when: "2015.4–2022.3", ja: 静岡大学 学術院工学領域 電気電子工学系列 助教, en: "Assistant Professor, Department of Electrical and Electronic Engineering, Academic Institute, Shizuoka University" }
+  - { when: "2013.4–2015.3", ja: 日本学術振興会 特別研究員（PD）　受入れ：広島大学, en: "JSPS Research Fellow (PD), hosted by Hiroshima University" }
+  - { when: "2013.3", ja: 広島大学大学院工学研究科博士課程後期 システムサイバネティクス専攻 修了　博士（工学）, en: "PhD (Eng), Department of System Cybernetics, Graduate School of Engineering, Hiroshima University" }
+  - { when: "2010.3", ja: 広島大学大学院工学研究科博士課程前期 複雑システム工学専攻 修了　修士（工学）, en: "MEng, Department of Artificial Complex Systems Engineering, Graduate School of Engineering, Hiroshima University" }
+  - { when: "2008.3", ja: 広島大学工学部第二類（電気・電子・システム・情報系）卒業　学士（工学）, en: "BEng, Cluster 2 (Electrical, Electronic, Systems and Information Engineering), Faculty of Engineering, Hiroshima University" }
+  - { when: "2004.3", ja: 国立広島大学附属高等学校 卒業, en: "Graduated from Hiroshima University High School" }
 
 theses:
-  - { kind: { ja: 学士論文, en: Bachelor's thesis }, text: "カプセル型内視鏡のための非接触エネルギー伝送システム（広島大学，2008年3月）", text_en: "A Non-contact Energy Transmission System for Capsule Endoscopes (Hiroshima University, March 2008)" }
-  - { kind: { ja: 修士論文, en: Master's thesis }, text: "A Study on an Insulator Thickness of a Wireless Energy Transmission Transformer for an Artificial Heart（広島大学，2010年3月）", text_en: "A Study on an Insulator Thickness of a Wireless Energy Transmission Transformer for an Artificial Heart (Hiroshima University, March 2010)" }
   - { kind: { ja: 博士論文, en: Doctoral dissertation }, text: "Noninvasive Measurement of Pulse Pressure Waves for Evaluation of Arterial Mechanical Properties（広島大学，2013年3月）", text_en: "Noninvasive Measurement of Pulse Pressure Waves for Evaluation of Arterial Mechanical Properties (Hiroshima University, March 2013)" }
+  - { kind: { ja: 修士論文, en: Master's thesis }, text: "A Study on an Insulator Thickness of a Wireless Energy Transmission Transformer for an Artificial Heart（広島大学，2010年3月）", text_en: "A Study on an Insulator Thickness of a Wireless Energy Transmission Transformer for an Artificial Heart (Hiroshima University, March 2010)" }
+  - { kind: { ja: 学士論文, en: Bachelor's thesis }, text: "カプセル型内視鏡のための非接触エネルギー伝送システム（広島大学，2008年3月）", text_en: "A Non-contact Energy Transmission System for Capsule Endoscopes (Hiroshima University, March 2008)" }
 
 societies:
   - { ja: 電気学会, en: The Institute of Electrical Engineers of Japan }
