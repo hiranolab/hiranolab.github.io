@@ -36,15 +36,11 @@
   <div class="wrap split">
     <h2 class="section-title">{{ t('past_members') }}</h2>
     <div>
-    {% for u in members.past %}
-      <h3 class="sub">{{ p(u.university) }}</h3>
-      <dl class="alumni">
-      {% for y in u.years %}
-        <dt>{{ p(y.year) }}</dt>
-        <dd>{% for n in y.names %}<span>{{ p(n) }}</span>{% endfor %}</dd>
-      {% endfor %}
-      </dl>
-    {% endfor %}
+      <a class="faculty" href="alumni.html">
+        <span class="faculty-title">{{ t('past_members_link') }}</span>
+        <span class="faculty-name">{{ t('past_members') }}</span>
+        <span class="faculty-more">{{ t('past_members_more') }}</span>
+      </a>
     </div>
   </div>
 </section>

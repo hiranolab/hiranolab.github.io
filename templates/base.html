@@ -43,7 +43,7 @@
     <nav id="sitenav" class="sitenav" aria-label="{{ t('menu') }}">
       <ul>
       {% for s, key in nav %}
-        <li><a href="{{ navroot }}{{ s }}.html"{% if s == slug or (slug == 'hirano' and s == 'members') %} aria-current="page"{% endif %}>{{ t(key) }}</a></li>
+        <li><a href="{{ navroot }}{{ s }}.html"{% if s == slug or (slug in ('hirano', 'alumni') and s == 'members') %} aria-current="page"{% endif %}>{{ t(key) }}</a></li>
       {% endfor %}
       </ul>
       <a class="lang-switch" href="{{ switch_href }}" hreflang="{{ 'en' if lang == 'ja' else 'ja' }}" lang="{{ 'en' if lang == 'ja' else 'ja' }}">{{ t('switch') }}</a>
