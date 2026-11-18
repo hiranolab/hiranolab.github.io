@@ -161,11 +161,11 @@ categories:
     ja: 解説論文・紀要・書籍
     en: Reviews, Bulletins and Books
     items:
-      - text: "平野陽豊（分担執筆），第39回臨床工学技士国家試験問題解説集，一般社団法人 日本臨床工学技士教育施設協議会 編，へるす出版，2026．"
-        en: "Harutoyo Hirano (contributing author), Commentary on the 39th National Examination for Clinical Engineers, edited by the Japan Association of Educational Facilities of Clinical Engineers (JAEFCE), Herusu Shuppan, 2026 (in Japanese)."
+      - text: "平野陽豊（分担執筆），第39回臨床工学技士国家試験問題解説集，一般社団法人 日本臨床工学技士教育施設協議会 編，へるす出版，pp. 157-161，2026．"
+        en: "Harutoyo Hirano (contributing author), Commentary on the 39th National Examination for Clinical Engineers, edited by the Japan Association of Educational Facilities of Clinical Engineers (JAEFCE), Herusu Shuppan, pp. 157-161, 2026 (in Japanese)."
         url: "https://www.herusu-shuppan.co.jp/140-2/"
-      - text: "平野陽豊（分担執筆），第35回臨床工学技士国家試験問題解説集，一般社団法人 日本臨床工学技士教育施設協議会 編，へるす出版，2022．"
-        en: "Harutoyo Hirano (contributing author), Commentary on the 35th National Examination for Clinical Engineers, edited by the Japan Association of Educational Facilities of Clinical Engineers (JAEFCE), Herusu Shuppan, 2022 (in Japanese)."
+      - text: "平野陽豊（分担執筆），第35回臨床工学技士国家試験問題解説集，一般社団法人 日本臨床工学技士教育施設協議会 編，へるす出版，pp. 27-33，2022．"
+        en: "Harutoyo Hirano (contributing author), Commentary on the 35th National Examination for Clinical Engineers, edited by the Japan Association of Educational Facilities of Clinical Engineers (JAEFCE), Herusu Shuppan, pp. 27-33, 2022 (in Japanese)."
         url: "https://www.herusu-shuppan.co.jp/056-2/"
       - text: "辻敏夫，平野陽豊，東幸仁，吉栖正生．ezFMD: 医工連携研究による新しい血管内皮機能評価法の開発．脈管学．2019；59(4)：23–28"
         en: "Toshio Tsuji, Harutoyo Hirano, Yukihito Higashi, Masao Yoshizumi. Enclosed Zone Flow-mediated Dilation (ezFMD): Development of a Novel Method for Evaluating Vascular Endothelial Function through Medical and Engineering Collaboration. The Journal of Japanese College of Angiology. 2019; 59(4): 23-28 (in Japanese)"
@@ -325,7 +325,7 @@ categories:
         award: "日本人間工学会中国・四国支部平成25年度優秀論文賞"
         award_en: "Japan Ergonomics Society Chugoku-Shikoku Branch, Excellent Paper Award (FY2013)"
       - text: "松原裕樹，松岡玄樹，福地智宏，平野博大，平野陽豊，栗田雄一，鵜川貞二，中村隆治，佐伯昇，河本昌志，吉栖正生，辻敏夫，“対数線形化末梢血管粘弾性モデルを用いた電気刺激に対する自律神経活動評価”，第46回日本人間工学会中国・四国支部大会講演論文集，pp. 74-75，サテライトキャンパスひろしま，広島，2013年12月．"
-      - text: "平野陽豊，高間蓮成，栗田雄一，辻敏夫，鵜川貞二，高柳恒夫，森本陽香，中村隆治，佐伯昇，河本昌志，東幸仁，吉栖正生，“ezFMDを利用した下肢血管内皮機能評価”，第36回日本高血圧学会総会プログラム・抄録集，p. 336，大阪国際会議場，大阪，2013年10月．"
+      - text: "平野陽豊，高間蓮成，辻敏夫，鵜川貞二，高柳恒夫，森本陽香，中村隆治，佐伯昇，河本昌志，東幸仁，吉栖正生，“ezFMDを利用した下肢血管内皮機能評価”，第36回日本高血圧学会総会プログラム・抄録集，BP2-5，p. 335，大阪国際会議場，大阪，2013年10月．"
       - text: "藤川皓基，木原大輔，平野博大，平野陽豊，西田圭子，住居晃太郎，辻敏夫，吉栖正生，“方向依存性対数線形化血管粘弾性モデルを用いた新規血管内超音波画像解析法”，第9回西日本血管・機能研究会抄録，p. 7，ホテル日航福岡，福岡，2013年8月．"
       - text: "Shinsuke Mikami, Yukihito Higashi, Noritaka Fujimura, Naomi Idei, Takayuki Hidaka, Tatsuya Maruhashi, Takeshi Matsumoto, Masato Kajikawa, Yumiko Iwamoto, Kensuke Noma, Ayumu Nakashima, Kazuaki Chayama, Taijiro Sueda, Harutoyo Hirano, Toshio Tsuji, Yasuki Kihara, “Effects of Low-intensity Pulsed Ultrasound Therapy on Clinical Symptoms and Endothelial Function in Patients with Peripheral Arterial Disease”, PE-388, Circulation Journal, vol. 77, Suppl. I, I-1739, PACIFICO Yokohama, Yokohama, March, 2013."
         url: "http://www2.convention.co.jp/jcs2013/japan/shoroku/index.html"
@@ -351,7 +351,7 @@ categories:
         url: "https://doi.org/10.1299/jsmeiip.2010.211"
       - text: "柴建次，檜垣直哉，平野陽豊，“生体電磁安全性を考慮した非接触電力伝送トランスフォーマの設計―体内埋込型人工心臓の場合―”，広島中央サイエンスパーク研究公開フォーラム(ＪＳＴイノベーションプラザ広島)，東広島，2009年12月．"
       - text: "丸山大海，平野陽豊，檜垣直哉，柴建次，“容量結合を利用した体内埋込式小型医療機器用非接触電力伝送－最適な伝送周波数の検討－”，第7回生活支援工学系学会連合大会講演予稿集，p.151，高知大学，高知，2009年9月．"
-      - text: "平野陽豊，柴建次，本間章彦，巽英介，妙中義之，“体内埋込型人工心臓用非接触エネルギー伝送トランスフォーマの絶縁被膜層の厚さの検討”，第48回日本生体医工学会大会講演論文集，24pmO-17-5，タワーホール船堀，東京，2009年4月．"
+      - text: "平野陽豊，柴建次，本間章彦，巽英介，妙中義之，“体内埋込型人工心臓用非接触エネルギー伝送トランスフォーマの絶縁被膜層の厚さの検討”，第48回日本生体医工学会大会講演論文集，23pmP3-3-14，タワーホール船堀，東京，2009年4月．"
       - text: "平野陽豊，柴建次，“人工心臓用非接触電力伝送トランスフォーマの設計－絶縁皮膜層の厚さと伝送効率および誘導電流の関係－”，第46回日本人工臓器学会大会抄録集，pp. S-144，六本木ヒルズ，東京，2008年11月．"
       - text: "川本敬之，平野陽豊，柴建次，辻敏夫，“電磁誘導を用いた中距離エネルギー伝送”，第41回日本人間工学会中国・四国支部大会講演論文集，pp. 32-33，県立広島大学，三原，2008年11月．"
       - text: "丸山大海，平野陽豊，柴建次，辻敏夫，“容量結合方式を用いた体内埋込医療機器用非接触エネルギー伝送システムの設計”，第41回日本人間工学会 中国・四国支部大会講演論文集，pp. 34-35，県立広島大学，三原，2008年11月．"
