@@ -30,7 +30,7 @@ theses:
 
 societies:
   - { ja: 電気学会, en: The Institute of Electrical Engineers of Japan }
-  - { ja: IEEE EMB Society, en: IEEE Engineering in Medicine and Biology Society }
+  - { ja: IEEE（Senior Member），EMB Society, en: "IEEE (Senior Member), Engineering in Medicine and Biology Society" }
   - { ja: 日本循環器学会, en: The Japanese Circulation Society }
   - { ja: 日本高血圧学会, en: The Japanese Society of Hypertension }
   - { ja: 日本脈管学会, en: Japanese College of Angiology }
@@ -39,6 +39,7 @@ societies:
   - { ja: 電子情報通信学会, en: "The Institute of Electronics, Information and Communication Engineers" }
 
 awards:
+  - { date: "2026.11.25", ja: "IEEE Senior Member", en: "IEEE Senior Member" }
   - { date: "2019.3.5", ja: "SI2018優秀講演賞", en: "SI2018 Excellent Presentation Award", work: "オシロメトリック式自動血圧計と血管粘弾性モデルに基づく下肢血管内皮機能の評価", work_en: "Evaluation of Lower-Limb Vascular Endothelial Function Based on an Oscillometric Automatic Sphygmomanometer and an Arterial Viscoelastic Model" }
   - { date: "2018.10.25", ja: "Japanese College of Angiology Award (JCAA) 優秀賞", en: "Japanese College of Angiology Award (JCAA), Excellence Award", work: "椅子型体表脈波計測システムを用いた心拍数と呼吸数の無拘束計測", work_en: "Unconstrained Measurement of Heart Rate and Respiratory Rate Using a Chair-Type Body-Surface Pulse Wave Measurement System" }
   - { date: "2016.6.24", ja: "日本医療機器学会 平成27年度論文賞", en: "Japanese Society of Medical Instrumentation, Best Paper Award (FY2015)", work: "Head-up tilt試験を利用したパーキンソン病患者の自律神経機能診断支援法の提案", work_en: "A diagnostic support method for evaluating autonomic nervous function of patients with Parkinson's disease using a head-up tilt test" }
