@@ -5,9 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{% block title %}{{ p(site.lab) }}{% endblock %} | {{ p(site.affiliation) }}</title>
 <meta name="description" content="{{ p(site.lab) }} — {{ p(site.affiliation) }}. {{ p(site.tagline) }}">
-<link rel="canonical" href="{{ site.url }}{{ '' if lang == 'ja' else 'en/' }}{{ slug }}.html">
-<link rel="alternate" hreflang="ja" href="{{ site.url }}{{ slug }}.html">
-<link rel="alternate" hreflang="en" href="{{ site.url }}en/{{ slug }}.html">
+{% set pfile = '' if slug == 'index' else slug ~ '.html' %}
+<link rel="canonical" href="{{ site.url }}{{ '' if lang == 'ja' else 'en/' }}{{ pfile }}">
+<link rel="alternate" hreflang="ja" href="{{ site.url }}{{ pfile }}">
+<link rel="alternate" hreflang="en" href="{{ site.url }}en/{{ pfile }}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet">
@@ -15,7 +16,7 @@
 <link rel="stylesheet" href="{{ root }}static/style.css?v={{ v }}">
 <link rel="icon" href="{{ root }}static/img/favicon.svg?v={{ v }}" type="image/svg+xml">
 <link rel="apple-touch-icon" href="{{ root }}static/img/apple-touch-icon.png">
-{% set page_url = site.url ~ ('' if lang == 'ja' else 'en/') ~ slug ~ '.html' %}
+{% set page_url = site.url ~ ('' if lang == 'ja' else 'en/') ~ pfile %}
 <meta property="og:type" content="{{ 'website' if slug == 'index' else 'article' }}">
 <meta property="og:site_name" content="{{ p(site.lab) }}">
 <meta property="og:title" content="{{ self.title() }}{% if slug != 'index' %} | {{ p(site.lab) }}{% endif %}">
